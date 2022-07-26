@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="use_activity">false</bool>
+    <bool name="use_provider">true</bool>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fastscroll_bubble_radius">16dp</dimen>
+    <dimen name="fastscroll_scrollbar_padding_end">12dp</dimen>
+    <dimen name="margin_top">24dp</dimen>
+    <dimen name="margin_top_nve">-24dp</dimen>
+</resources>

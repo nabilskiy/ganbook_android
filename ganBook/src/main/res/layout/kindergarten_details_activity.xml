@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/app_bar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@color/app_background"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/kindergarten_name"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/kindergarten_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/kindergarten_name"
+                android:inputType="textEmailAddress"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/kindergarten_phone"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/kindergarten_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/kindergarten_phone"
+                android:inputType="phone"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/kindergarten_address"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/kindergarten_address"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/kindergarten_address"
+                android:inputType="text"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/kindergarten_city"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/kindergarten_city"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/kindergarten_city"
+                android:inputType="textPostalAddress"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/teacher_name"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/teacher_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/teacher_name"
+                android:inputType="text"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/teacher_mobile"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/teacher_mobile"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/teacher_mobile"
+                android:inputType="phone"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="25dip"
+    android:background="@drawable/round_rect" 
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/toast_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="37dp"    
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/toast_icon" /> 
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dip" 
+            android:layout_marginRight="7dip"  
+            android:gravity="left" 
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/toast_text1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="3dip"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" 
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

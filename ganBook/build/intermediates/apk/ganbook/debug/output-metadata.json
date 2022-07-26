@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.project.ganim",
+  "variantName": "ganbookDebug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 580,
+      "versionName": "77",
+      "outputFile": "ganBook-ganbook-debug.apk"
+    }
+  ],
+  "elementType": "File"
+}

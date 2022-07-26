@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.ganim"
+    android:versionCode="580"
+    android:versionName="77" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.project.ganim.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.project.ganim.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- BEGIN for Bagde lib -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" /> <!-- for Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" /> <!-- for apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <permission
+        android:name="com.project.ganim.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.project.ganim.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.ganbook.app.MyApp"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.ganbook.activities.MeetingEventListActivity" />
+        <activity android:name="com.ganbook.activities.MeetingAttendees" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.ganbook.activities.EntryScreenActivity"
+            android:label="@string/app_name"
+            android:noHistory="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.ganbook.activities.CustomAdsActivity" />
+        <activity
+            android:name="com.ganbook.activities.SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="web.ganbook.co.il"
+                    android:pathPrefix="/url"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ganbook.activities.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.NewYearActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.NewYearEndScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.CommentsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ganbook.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.ganbook.activities.TrimActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.FavoriteActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.EditCommentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.ganbook.activities.InviteParentsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:noHistory="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.ParentDetailsActivity"
+            android:label="@string/title_activity_parent_details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.SelectPTAActivity"
+            android:label="@string/title_activity_parent_details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_pta"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="com.ganbook." />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ganbook.activities.AddKidActivity"
+            android:label="@string/title_activity_class_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.AddClassActivity"
+            android:label="@string/title_activity_class_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.ChooseClassActivity"
+            android:label="@string/title_activity_class_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.EnterEmailActivity"
+            android:label="@string/title_activity_enter_email"
+            android:noHistory="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.PtaActivity"
+            android:label="@string/title_activity_enter_email"
+            android:noHistory="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.SignupActivity"
+            android:label="@string/title_activity_registration"
+            android:noHistory="false" />
+        <activity
+            android:name="com.ganbook.activities.AddAlbumActivity"
+            android:label="@string/title_activity_enter_code"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.DescriptionActivity"
+            android:label="@string/title_activity_enter_code"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.EnterCodeActivity"
+            android:label="@string/title_activity_enter_code" />
+        <activity
+            android:name="com.ganbook.activities.WebViewActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.ganbook.activities.RegistrationSucceededActivity"
+            android:label="@string/title_activity_add_child" />
+        <activity
+            android:name="com.ganbook.activities.ZoomActivity"
+            android:label="@string/title_activity_zoom" />
+        <activity
+            android:name="com.ganbook.activities.UpdateTeacherDetailsActivity"
+            android:label="@string/title_activity_zoom"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.KindergartenDetailsActivity"
+            android:label="@string/title_activity_zoom" />
+        <activity
+            android:name="com.ganbook.activities.ChangePasswordActivity"
+            android:label="@string/title_activity_zoom" />
+        <activity
+            android:name="com.ganbook.activities.EventActivity"
+            android:label="@string/title_activity_zoom" />
+        <activity
+            android:name="com.ganbook.activities.AddEventActivity"
+            android:label="@string/title_activity_zoom" />
+        <activity
+            android:name="com.ganbook.activities.SelectKidsActivity"
+            android:label="@string/title_activity_zoom" />
+        <activity
+            android:name="com.ganbook.activities.AddMessageActivity"
+            android:label="@string/title_activity_zoom"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.ganbook.activities.AlbumViewersActivity"
+            android:label="AlbumViewers"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.ganbook.activities.DrawingInformationAdding"
+            android:label="add drawing"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.ganbook.activities.UserAttachmentsActivity"
+            android:label="Attachments" />
+        <activity
+            android:name="com.luminous.pick.CustomGalleryActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="luminous.ACTION_PICK" />
+                <action android:name="luminous.ACTION_MULTIPLE_PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ganbook.activities.TutorialActivity"
+            android:label="Tutorial"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.ganbook.activities.StudentListActivity"
+            android:label="Student list"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.ganbook.activities.SingleStudentInfo"
+            android:label="Student info"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.ganbook.activities.AttachmentWebView"
+            android:hardwareAccelerated="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.ganbook.activities.UploadAttachmentActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service android:name="com.ganbook.communication.upload.UploadService" />
+
+        <receiver
+            android:name="com.ganbook.connection.ConnectionStateListener"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.JobScheduler" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="YVyJJy3WNvIHKl579qQMFm6dqNDZeRtyYLOxBHsa" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="rpiIDBC4JzX412Ai1ADy1FmNefaUOfIgIk5MnpQy" /> <!-- GCM setup -->
+        <meta-data
+            android:name="com.parse.push.gcm_sender_id"
+            android:value="id:213959356519" />
+
+        <service
+            android:name="com.parse.fcm.ParseFirebaseInstanceIdService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.parse.fcm.ParseFirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+        <receiver android:name="com.parse.ParsePushBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+                <action android:name="com.parse.push.intent.DELETE" />
+            </intent-filter>
+        </receiver>
+        -->
+        <receiver
+            android:name="com.ganbook.gcm.CustomeParsePushBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="802d4dbb638b95fc0e40716fd651afab6b602727" />
+
+        <service
+            android:name="com.ganbook.gcm.RegistrationIntentService"
+            android:exported="false" />
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+        <service
+            android:name="com.ganbook.services.UploadService"
+            android:enabled="true" />
+        <service
+            android:name="com.ganbook.services.SupportUploadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name="com.ganbook.activities.GridGalleryActivity" />
+
+        <service
+            android:name="com.ganbook.services.UpdateKidPicService"
+            android:exported="false" />
+        <service
+            android:name="com.ganbook.services.UploadInstitutionLogoService"
+            android:exported="false" />
+        <service
+            android:name="com.ganbook.services.UploadTeacherImageService"
+            android:exported="false" />
+        <service
+            android:name="com.ganbook.services.SingleCommercialService"
+            android:exported="false" />
+        <service
+            android:name="com.ganbook.services.UploadDrawingService"
+            android:exported="false" />
+        <service
+            android:name="com.ganbook.services.UploadAudioService"
+            android:exported="false" />
+        <service
+            android:name="com.ganbook.services.UploadMessageAttachmentService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.ganbook.activities.PickDropActivity"
+            android:label="@string/title_activity_pick_drop"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.ganbook.activities.PickDropNotificationsActivity" />
+        <activity
+            android:name="com.ganbook.activities.MeetingEventActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.ganbook.activities.MeetingHoursActivity" />
+        <activity
+            android:name="com.fxn.pix.Pix"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/PixAppTheme" />
+        <activity
+            android:name="com.nbsp.materialfilepicker.ui.FilePickerActivity"
+            android:theme="@style/MFP_BaseTheme" >
+        </activity>
+
+        <service
+            android:name="com.parse.fcm.ParseFirebaseJobService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.project.ganim.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.project.ganim.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+        <!--
+             Receives GooglePlay execution requests and forwards them to the
+             appropriate internal service.
+        -->
+        <service
+            android:name="com.firebase.jobdispatcher.GooglePlayReceiver"
+            android:exported="true"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>

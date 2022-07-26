@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/firstLayout"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/create_drawing_dialog_bg"
+        android:layout_height="450dp">
+
+        <TextView
+            android:id="@+id/createDrawingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/paste_url_text"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/pasteUrlText"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/dialog_edittext_style"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/createDrawingText"
+            android:hint="Url..." />
+
+
+        <Button
+            android:id="@+id/uploadFileAttachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="130dp"
+            android:background="@drawable/dialog_button_style"
+            android:text="@string/send_text" />
+
+        <Button
+            android:id="@+id/cancelDialogAttachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="65dp"
+            android:background="@drawable/dialog_button_style"
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

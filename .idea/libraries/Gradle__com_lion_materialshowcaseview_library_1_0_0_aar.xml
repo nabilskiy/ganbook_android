@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.lion.materialshowcaseview:library:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/53e24a16c4464e0147f5aa45c8b9face/transformed/jetified-library-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/53e24a16c4464e0147f5aa45c8b9face/transformed/jetified-library-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/53e24a16c4464e0147f5aa45c8b9face/transformed/jetified-library-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.lion.materialshowcaseview/library/1.0.0/20626c342d261f6064ec4f24447923563d1a4639/library-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.lion.materialshowcaseview/library/1.0.0/358a663011d4062f4d823b330efbe56b9e30f78/library-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

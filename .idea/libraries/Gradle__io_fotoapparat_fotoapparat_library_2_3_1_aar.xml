@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.fotoapparat.fotoapparat:library:2.3.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b5d814f6cf569999533884bf09b4c979/transformed/jetified-library-2.3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b5d814f6cf569999533884bf09b4c979/transformed/jetified-library-2.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b5d814f6cf569999533884bf09b4c979/transformed/jetified-library-2.3.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

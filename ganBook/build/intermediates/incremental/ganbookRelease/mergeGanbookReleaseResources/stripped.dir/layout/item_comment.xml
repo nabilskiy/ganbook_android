@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical" >
+
+    <com.ganbook.ui.CircleImageView
+        android:id="@+id/profile_image"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_pic_default"
+        app:border_color="@android:color/white"
+        app:border_width="2dp" >
+    </com.ganbook.ui.CircleImageView>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/album_caption_bg"
+        android:text="aaa"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="10dp"
+        android:textColor="#595959"
+        android:text="גגג כככ ככךל ללכ"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_comment"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_marginLeft="10dp"
+        android:textColor="#D4D4D4"
+        android:text="גגג כככ ככךל ללכ"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_edit_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#CECECE"
+        android:text="@string/edit_comment"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

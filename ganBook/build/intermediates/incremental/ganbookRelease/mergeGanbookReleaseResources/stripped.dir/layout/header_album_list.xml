@@ -1,0 +1,48 @@
+        
+
+	
+
+           
+            
+                   
+
+           
+              
+                   
+
+        
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			xmlns:tools="http://schemas.android.com/tools"
+    		android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+			app:slm_headerDisplay="inline|sticky"
+			app:slm_isHeader="true" android:tag="layout/header_album_list_0">
+	<TextView 
+	    android:id="@+id/see_more"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@android:color/darker_gray" 
+	    android:padding="5dp"
+	    android:gravity="center"
+	                        
+	    android:textColor="@android:color/white"
+	    android:textSize="13sp"
+	    android:visibility="gone"
+	    android:textStyle="bold"  android:tag="binding_1"/>
+	<TextView 
+	    android:id="@+id/header"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/album_caption_bg" 
+	    android:padding="10dp"
+	    android:gravity="center"
+	    android:lines="2"
+	                          
+	    android:textColor="@android:color/white"
+	    android:textSize="17sp"
+	    android:textStyle="bold"  android:tag="binding_2"/>
+</LinearLayout>
+         

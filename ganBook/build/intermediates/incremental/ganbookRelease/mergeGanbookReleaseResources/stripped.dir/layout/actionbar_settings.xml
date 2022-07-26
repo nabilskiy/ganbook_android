@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F7F7F7"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/up_navigation"
+        android:layout_height="25dp"
+        android:layout_width="25dp"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/up_navigation"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/action_settings"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"/>
+    
+
+</RelativeLayout>

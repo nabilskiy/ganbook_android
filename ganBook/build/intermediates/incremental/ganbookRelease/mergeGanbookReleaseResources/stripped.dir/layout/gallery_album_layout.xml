@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+
+    <com.ganbook.ui.GridViewWithHeaderAndFooter
+        android:id="@+id/photos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" >
+    </com.ganbook.ui.GridViewWithHeaderAndFooter>
+
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:background="#DCDCDC"
+            android:layout_alignParentTop="true"
+            />
+
+        <ImageView
+            android:id="@+id/camera_btn"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/lower_panel_camara"/>
+
+        <ImageView
+            android:id="@+id/download_btn"
+            android:visibility="visible"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/download"/>
+
+        <ImageView
+            android:id="@+id/try_again_btn"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/restart"/>
+
+
+
+        <TextView
+            android:id="@+id/num_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="0"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="#DCDCDC" />
+
+        <ImageView
+            android:id="@+id/comments_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/num_comments"
+            android:src="@drawable/chat"/>
+
+        <TextView
+            android:id="@+id/num_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/comments_image"
+            android:layout_marginRight="15dp"
+            android:text="0"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="#DCDCDC" />
+
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/num_likes"
+            android:layout_marginRight="5dp"
+            >
+
+
+            <ViewSwitcher
+                android:id="@+id/switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:inAnimation="@anim/fadein_like"
+                android:outAnimation="@anim/fadeout_like" >
+
+                <ImageView
+                    android:id="@+id/heart_active"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    android:src="@drawable/heart_active_grey" />
+
+                <ImageView
+                    android:id="@+id/heart_inactive"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    android:src="@drawable/heart_inactive_grey" />
+            </ViewSwitcher>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    
+    
+</LinearLayout>

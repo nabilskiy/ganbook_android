@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.VRGsoftUA:RollingLayoutManager:1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3340254ca5831e5796b6c2701555018d/transformed/jetified-RollingLayoutManager-1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3340254ca5831e5796b6c2701555018d/transformed/jetified-RollingLayoutManager-1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3340254ca5831e5796b6c2701555018d/transformed/jetified-RollingLayoutManager-1.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.VRGsoftUA/RollingLayoutManager/1.0/a867ebffd7cba5c2e3cae8e3170de41958139616/RollingLayoutManager-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

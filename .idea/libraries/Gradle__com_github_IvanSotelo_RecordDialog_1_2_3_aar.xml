@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.IvanSotelo:RecordDialog:1.2.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7560f2ee306312079dedc1103e3b1b86/transformed/jetified-RecordDialog-1.2.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7560f2ee306312079dedc1103e3b1b86/transformed/jetified-RecordDialog-1.2.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7560f2ee306312079dedc1103e3b1b86/transformed/jetified-RecordDialog-1.2.3/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.IvanSotelo/RecordDialog/1.2.3/86606ce3e6c9ad7eae329450773afeb59328fd65/RecordDialog-1.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

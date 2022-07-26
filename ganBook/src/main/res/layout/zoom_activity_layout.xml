@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.ganbook.ui.zoomable.ExtendedViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    <RelativeLayout
+        android:id="@+id/zoom_header"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:background="@drawable/single_image_header_menu">
+        
+        
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"            
+            android:layout_height="wrap_content"
+	        android:text="@string/save"
+	        android:textColor="@android:color/white"
+	   	    android:textSize="20sp"	   	    
+	   	    android:layout_centerInParent="true"
+	   	    
+            /> 
+        
+        
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:id="@+id/zoom_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/single_image_menu">
+
+        
+        <ImageButton
+            android:id="@+id/upload_btn"
+            android:visibility="gone"
+            android:layout_width="wrap_content"            
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/upload_btn" /> 
+        
+        <ImageButton
+            android:id="@+id/share_pict_btn"
+            android:visibility="visible"
+            android:layout_width="40dp"
+            android:layout_below="@+id/view"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/share"
+            android:contentDescription="@string/app_name" />
+
+        <ViewSwitcher
+            android:id="@+id/switcher"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/view"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/base">
+            <!--android:inAnimation="@anim/fadein_like"
+            android:outAnimation="@anim/fadeout_like" >-->
+
+            <ImageView
+                android:id="@+id/fav_inactive"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:src="@drawable/fav_inactive" />
+
+            <ImageView
+                android:id="@+id/fav_active"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:src="@drawable/fav_active" />
+        </ViewSwitcher>
+
+        <ImageButton
+            android:id="@+id/save_right_btn"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+	        android:text="@string/save"
+	        android:textColor="@android:color/white"
+	   	    android:textSize="20sp"
+            android:background="@drawable/download"
+	   	    android:layout_alignParentRight="true"
+	   	    android:layout_centerVertical="true"
+	        android:layout_marginRight="11dp"
+            android:layout_marginTop="0dp"
+            /> 
+        
+        
+    </RelativeLayout>
+
+</FrameLayout>

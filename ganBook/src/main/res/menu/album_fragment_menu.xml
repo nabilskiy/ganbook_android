@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:id="@+id/bit_app"-->
+<!--        android:icon="@drawable/bit_app_logo"-->
+<!--        android:showAsAction="always"-->
+<!--        app:showAsAction="always"-->
+<!--        tools:ignore="AppCompatResource" />-->
+
+    <item
+        android:id="@+id/add_album"
+        android:icon="@drawable/plus_btn"
+        android:title="plus"
+        android:showAsAction="always"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+</menu>

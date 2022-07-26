@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerInParent="true"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <TextView 
+	    android:id="@+id/blue_header"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/album_caption_bg" 
+	    android:padding="10dp"
+	    android:gravity="center"
+	    android:lines="2"
+	    android:text="header\nnoa"
+	    android:textColor="@android:color/white"
+	    android:textSize="17sp"
+	    android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/upper_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/enter_code_text"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/gan_code"
+            android:layout_width="122dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:background="@drawable/boader"
+            android:hint="@string/enter_code"/> 
+        
+        <Button
+            android:id="@+id/send_btn"
+            android:gravity="center"
+            android:background="@color/album_caption_bg"
+            android:text="@string/send_btn"
+            android:textColor="@android:color/white"
+            android:layout_width="122dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="25dp"/>
+        
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/or"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/cont_btn"
+        android:gravity="center"
+        android:background="@color/album_caption_bg"
+        android:text="@string/stay_school"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/lower_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/request_code" 
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_small" />
+    
+ 
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    ***button_gray is a Drawable image***
+
+    ***button_red is a Drawable image***
+
+    <item android:state_enabled="false" android:drawable="@drawable/location_icon_disabled" />
+    <item android:state_pressed="true" android:drawable="@drawable/location_icon" />
+    <item android:drawable="@drawable/location_icon" />
+</selector>

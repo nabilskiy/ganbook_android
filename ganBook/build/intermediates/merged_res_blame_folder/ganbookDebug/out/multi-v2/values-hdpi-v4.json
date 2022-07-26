@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.project.ganim.ganBook-mergeGanbookDebugResources-62:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "D:\\sasha\\ganbook_full\\ganbook darko\\ganBook\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "from": {
+                        "startLines": "11,10,12,9,4,3,14,13,7,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "409,353,467,306,100,56,559,515,218,259",
+                        "endColumns": "57,55,47,46,44,43,45,43,40,46",
+                        "endOffsets": "462,404,510,348,140,95,600,554,254,301"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,169,217,264,309,353,399,443,484",
+                        "endColumns": "57,55,47,46,44,43,45,43,40,46",
+                        "endOffsets": "108,164,212,259,304,348,394,438,479,526"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\1a5db43382064bde32fed4816eb41b40\\transformed\\appcompat-1.6.0-alpha05\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "12",
+                        "startColumns": "4",
+                        "startOffsets": "531",
+                        "endLines": "16",
+                        "endColumns": "13",
+                        "endOffsets": "803"
+                    }
+                }
+            ]
+        }
+    ]
+}

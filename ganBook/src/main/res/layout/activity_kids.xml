@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_bar_layout" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="@string/select_kids_title"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="@string/all_kids"
+        android:id="@+id/all_kids_switch"/>
+
+    <ListView
+        android:id="@+id/kids_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:divider="@color/app_background"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

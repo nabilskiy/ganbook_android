@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+
+	<include layout="@layout/app_bar_layout" />
+    
+
+    <LinearLayout
+        android:id="@+id/blue_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/album_caption_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/white" 
+        android:textStyle="normal" 
+        android:orientation="vertical">
+    
+        <TextView
+	        android:id="@+id/school_name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/album_caption_bg"
+	        android:gravity="center"
+	        android:text="kindergarten"
+	        android:textSize="@dimen/text_size"
+	        android:textColor="@android:color/white" 
+	        android:textStyle="bold" />
+        
+        <TextView
+			android:id="@+id/please_choose_class_text"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="5dp"
+	        android:text="@string/please_select_class"
+	        android:textSize="@dimen/text_size_small"
+	        android:textColor="@android:color/white" 
+	        android:textStyle="normal" />
+        
+    </LinearLayout>
+    
+    <ListView
+	    android:id="@+id/class_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"/> 
+    
+</LinearLayout>

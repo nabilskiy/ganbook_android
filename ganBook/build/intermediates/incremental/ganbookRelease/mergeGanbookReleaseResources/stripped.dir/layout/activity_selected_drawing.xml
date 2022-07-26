@@ -1,0 +1,166 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_layout" />
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawing_add_bg"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/app_bar">
+
+        <RelativeLayout
+            android:id="@+id/whoIsLayout"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <com.ganbook.ui.CircleImageView
+                android:id="@+id/kidImageDrawingPage"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_pic_default">
+            </com.ganbook.ui.CircleImageView>
+        <TextView
+            android:id="@+id/kidNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:text="kid name"
+            android:paddingLeft="10dp"
+            android:textSize="25sp"
+            android:layout_toEndOf="@+id/kidImageDrawingPage"
+            android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/imageDescriptionLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="82dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewDrawingAdd"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/selectedDrawing"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/drawing_placeholder" />
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:id="@+id/imageFrame"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/cardViewDrawingAdd"
+                android:layout_centerHorizontal="true">
+            <EditText
+                android:id="@+id/add_drawing_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#1A000000"
+                android:hint="@string/drawing_title_description_placeholder"
+                android:inputType="textMultiLine"
+                android:gravity="center"
+                android:lines="8"
+                android:scrollbars="vertical"
+                android:textColorHint="@color/black" />
+
+                <Button
+                    android:id="@+id/closeKeyboardBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@color/transparent"
+                    android:layout_gravity="end|center_vertical"
+                    android:textColor="@color/actionbar_bg_color"
+                    android:textSize="16sp"
+                    android:text="@string/keyboard_close_text"/>
+            </FrameLayout>
+          <Button
+              android:layout_below="@+id/imageFrame"
+              android:id="@+id/show"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="10dp"
+              android:layout_centerHorizontal="true"
+              android:background="@drawable/microphone"
+              android:textColor="@android:color/holo_blue_light" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/separator_drawing2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageDescriptionLayout"
+            android:background="@android:color/darker_gray" />
+
+       <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/separator_drawing2">
+
+            <Button
+                android:id="@+id/addVoiceBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:text="add voice"
+                android:drawableTop="@drawable/microphone_icon"
+                android:background="@color/transparent"
+                android:textColor="@android:color/holo_blue_light" />
+            <Button
+                android:id="@+id/stopVoiceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/addVoiceBtn"
+                android:text="STOP VOICE"
+                android:drawableTop="@drawable/microphone_icon"
+                android:background="@color/transparent"
+                android:textColor="@android:color/holo_blue_light" />
+            <Button
+                android:id="@+id/playVoice"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/addVoiceBtn"
+                android:text="PLAY VOICE"
+                android:drawableTop="@drawable/microphone_icon"
+                android:background="@color/transparent"
+                android:textColor="@android:color/holo_blue_light" />
+        </RelativeLayout> -->
+
+    </RelativeLayout>
+</RelativeLayout>

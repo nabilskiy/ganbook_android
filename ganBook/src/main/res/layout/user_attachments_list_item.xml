@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/attachmentTypeImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_file">
+
+        </ImageView>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/attachmentTypeImage"
+            android:background="@color/light_blue" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/attachmentFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/black"
+            android:text="File 1"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/attachmentFileDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/attachmentFileName"
+            android:textColor="@color/black"
+            android:text="Description about the file"
+            android:textSize="15sp" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/deleteAttachmentFile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/delete_document_icon"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

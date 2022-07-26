@@ -1,0 +1,20 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="media"
+            type="com.ganbook.models.MediaFile" />
+
+    </data>
+
+<ImageView
+    android:orientation="vertical"
+    android:layout_width="@dimen/item_pic_size"
+    android:layout_height="@dimen/item_pic_size"
+    android:background="@{media.highlight ? @drawable/preview_frame : null}"
+    app:mediaFile="@{media.filePath}">
+
+</ImageView>
+</layout>

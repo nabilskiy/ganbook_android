@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_pick_drop"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/toolbar_root"/>
+
+    <Switch
+        android:id="@+id/switchOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:switchTextAppearance="@style/SwitchStyle"
+        />
+
+    <TextView
+        android:id="@+id/kid_drop_text"
+        android:text="@string/kid_drop_text"
+        android:gravity="center_horizontal"
+        android:textColor="#66CCFF"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/pick_drop_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <EditText
+            android:id="@+id/drop_to"
+            android:layout_width="90dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/edit_bg"
+            android:focusable="false"
+            android:inputType="time"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="22sp" />
+
+        <TextView
+            android:text="@string/from2"
+            android:gravity="center_horizontal"
+            android:textColor="#66CCFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/drop_from"
+            android:layout_width="90sp"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/edit_bg"
+            android:focusable="false"
+            android:inputType="time"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="22sp" />
+
+        <TextView
+            android:text="@string/to2"
+            android:gravity="center_horizontal"
+            android:textColor="#66CCFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/kid_pickup_text"
+        android:text="@string/kid_pickup_text"
+        android:gravity="center_horizontal"
+        android:textColor="#66CCFF"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/pick_drop_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <EditText
+            android:id="@+id/pick_to"
+            android:layout_width="90dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/edit_bg"
+            android:focusable="false"
+            android:inputType="time"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/from2"
+            android:textColor="#66CCFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/pick_from"
+            android:layout_width="90dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/edit_bg"
+            android:focusable="false"
+            android:inputType="time"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/to2"
+            android:textColor="#66CCFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+<!--    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp" />-->
+    <Button
+        android:id="@+id/pickdrop_save"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/entry_button_selector"
+        android:text="@string/save"
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/pickdrop_notifications"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/entry_button_selector"
+        android:text="@string/notifications"
+        android:textSize="@dimen/text_size"
+        android:visibility="gone"
+        android:textColor="@android:color/white"/>
+
+    <android.widget.TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

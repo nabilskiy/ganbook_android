@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">GanBook</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="type_message">הקלד הודעה</string>
+	<string name="bad_email_msg">הקלד מייל בצורה נכונה.</string>
+	<string name="select_picture">בחר תמונה</string>
+	<string name="no_images_selected">לא נבחרו תמונות</string>
+	<string name="invite_friends">הזמן חברים</string>
+	<string name="albums">אלבומים</string>
+	<string name="not_if_empty">operation cannot be performed on an empty album</string>
+	<string name="operation_cannot_be_performed">Operation cannot be performed at the moment. Please try again later</string>
+	<string name="waiting_for_approval">ממתין לאישור הגננת</string>
+	<string name="approal_check_later">אנא בדוק מאוחר יותר</string>
+	<string name="logount_pop_title">יציאה</string>
+	<string name="popup_btn_ok">כן</string>
+	<string name="popup_btn_cancel">בטל</string>
+	<string name="logount_pop_text">האם אתה בטוח שברצונך לצאת?</string>
+	<string name="upload_photo_text">האם את/ה בטוח/ה שאת/ה רוצה להעלות את התמונות?</string>
+	<string name="upload_video_text">האם את/ה בטוח/ה שאת/ה רוצה להעלות את הסרטון?</string>
+	<string name="gan_data_incompete">אנא מלא את כל שדות הגן</string>
+	<string name="send_btn">שלח</string>
+	<string name="cancel_btn">מחק</string>
+	<string name="existing_lib_opt">בחר מגלריה קיימת</string>
+	<string name="new_pict_opt">צלם תמונה חדשה</string>
+	<string name="total_count">סך הכל</string>
+	<string name="empty_album">האלבום ריק</string>
+	<string name="empty_contact_list">לא נמצא איש קשר</string>
+	<string name="empty_messages_list">אין עדיין הודעות</string>
+	<string name="photos_pref">תמונות</string>
+	<string name="videos_pref">סרטונים</string>
+	<string name="video_pref">סרטון אחד</string>
+	<string name="kids">ילדים</string>
+	<string name="parents">הורים</string>
+	<string name="parent_details_header">פרטי הורה</string>
+	<string name="btn_upload">שלח/י להורים את התמונות</string>
+	<string name="upload_in_progress">ההעלאה בתהליך וכאשר תושלם ניידע אותך</string>
+	<string name="upload_completed">העלאה הושלמה בהצלחה</string>
+	<string name="upload_completed_with_errors">אירעה שגיאה במהלך ההעלאה</string>
+	<string name="add">הוסף</string>
+	<string name="add_album_sidemenu">צור אלבום</string>
+	<string name="album_name_hint">שם אלבום</string>
+	<string name="new_album_caption">אלבום חדש</string>
+	<string name="kindergarten_name">שם גן</string>
+	<string name="kindergarten_phone">טלפון</string>
+	<string name="kindergarten_address">כתובת</string>
+	<string name="kindergarten_city">עיר</string>
+	<string name="teacher_name">שם גננת</string>
+	<string name="teacher_mobile">טלפון נייד גננת</string>
+	<string name="gallery">גלריה</string>
+	<string name="messages">הודעות</string>
+	<string name="viewed">ראו</string>
+	<string name="views_str">צפיות</string>
+	<string name="send_email">שלח</string>
+	<string name="caption_enter_code">הקלד קוד</string>
+	<string name="txt_send">שלח</string>
+	<string name="select_opt">בחר</string>
+	<string name="rename_opt">שנה שם אלבום</string>
+	<string name="no_images_sel">חובה לבחור לפחות תמונה אחת</string>
+	<string name="kindergarten_code_pref">קוד גן:</string>
+	<string name="cannot_perform_op">operation could not be performed. Please try again later.</string>
+	<string name="operation_failed">operation could not be performed. Please try again later.</string>
+	<string name="total_str">סהכ:</string>
+	<string name="error_loading_user">Error loading user from local cache</string>
+	<string name="current_pass">סיסמא נוכחית</string>
+	<string name="new_pass">סיסמא חדשה</string>
+	<string name="verify_pass">אמת סיסמא חדשה</string>
+	<string name="forgot_pass">שכחתי סיסמא</string>
+	<string name="set_all_pass">All password values must be set</string>
+	<string name="not_verify_pass">אימות סיסמא חדשה נכשל</string>
+	<string name="lost_pass_title">שכחתי סיסמא</string>
+	<string name="on_lost_pass">הקלד את כתובת המייל שלך ואנו נישלח לך למייל לינק לשחזור סיסמא</string>
+	<string name="lost_pass_notif">אנא בדוק את המייל שלך ושחזר את הססמא</string>
+	<string name="viewed_by">צפו</string>
+	<string name="didnt_view">לא צפו</string>
+	<string name="total_parents_str">סך הכל הורים:</string>
+	<string name="invitation_subject">הזמנה מ גנבוק</string>
+	<string name="invitation_body_part_1">הורה יקר, הגננת בחרה באפליקציית גנבוק לשתף עימך תמונות והודעות. ניתן להוריד את האפליקציה כאן: http://ganbook.co.il/store_download.html לאחר הרישום השתמש בקוד זה:</string>
+	<string name="invitation_body_part_2">, והירשם לכיתת ילדך</string>
+	<string name="whoami_not_set">אנא בחר מי אתה</string>
+	<string name="uploading_now_notif">העלאת תמונות בתהליך..</string>
+	<string name="no_class_name">Class name must be specified</string>
+	<string name="no_album_name">Album name must be specified</string>
+	<string name="class_name">שם כיתה</string>
+	<string name="class_name_hint">שם גן</string>
+	<string name="kindergarten_details_title">פרטי גן</string>
+	<string name="class_phone_hint">טלפון</string>
+	<string name="class_address_hint">כתובת</string>
+	<string name="class_city_hint">עיר</string>
+	<string name="class_teachername_hint">שם מלא גננת</string>
+	<string name="class_teachermobile_hint">נייד גננת</string>
+	<string name="operation_proceeding">אנא המתן...</string>
+	<string name="operation_succeeded">הפעולה הסתיימה בהצלחה...</string>
+	<string name="select_btn">בחר</string>
+	<string name="add_album_btn">הוסף</string>
+	<string name="save_btn">שמור</string>
+	<string name="btn_cancel_select">בטל</string>
+	<string name="logged_out">המשתמש התנתק</string>
+	<string name="btn_ok">אישור</string>
+	<string name="processing_wait">בתהליך, אנא המתן...</string>
+	<string name="uploading_images_now">מעלה תמונות, הפעולה יכולה לקחת מס׳ דק׳...</string>
+	<string name="notif_title">גנבוק</string>
+	<string name="saving_kid">שומר ילד. אנא המתן...</string>
+	<string name="kid_successfully_added">ילד נשמר בהצלחה</string>
+	<string name="invite_friend_subject">הזמנה מגנבוק</string>
+	<string name="invite_friend_body">היי, גנים רבים כבר משתמשים באפליקציית גנבוק לשיתוף תמונות והודעות עם ההורים. אני חושב שזה רעיון מדהים ושימושי. חשבתי אולי תרצו לנסות אותה גם בגן שלכם. ניתן להוריד את האפליקצייה כאן: http://ganbook.co.il/store_download.html</string>
+	<string name="existing_library">בחר מגלריה קיימת</string>
+	<string name="take_new_pict">צלם תמונה חדשה</string>
+	<string name="take_new_vid">צלם סרטון חדש</string>
+	<string name="cancel">בטל</string>
+	<string name="share_via">שתף דרך</string>
+	<string name="share_pict_subject">תמונות מ</string>
+	<string name="share_pict_body">נשלח באמצעות אפליקציית Ganbook\n http://ganbook.co.il/store_download.html</string>
+	<string name="send_reminder">שלח תיזכורת</string>
+	<array name="icons">
+		<item>@drawable/girldefault</item>
+		<item>@drawable/boydefault</item>
+		<item>@drawable/boy_off</item>
+	</array>
+	<string name="kindergarten">גן</string>
+	<string name="mobile">נייד</string>
+	<string name="email">אימייל</string>
+	<string name="address">כתובת</string>
+	<string name="phone_number">טלפון</string>
+	<string name="k_num">טלפון בגן</string>
+	<string name="invite_parents">הזמן הורים</string>
+	<string name="settings">הגדרות</string>
+	<string name="title_activity_zoom">ZoomActivity</string>
+	<string name="login_progress">בתהליך כניסה, אנא המתן...</string>
+	<string name="register_progress">בתהליך רישום, אנא המתן...</string>
+	<string name="add_kid_here">הוסף ילד</string>
+	<string name="add_class_here">הוסף כחתה</string>
+	<string name="contact_list_header">אנשי קשר</string>
+	<string name="contact_profile_header">פרטי איש קשר</string>
+	<string name="edit_parent_header">עריכת פרטי הורה</string>
+	<string name="edit_btn">עריכה</string>
+	<string name="feedback_subject">משוב גנבוק</string>
+	<string name="feedback_body">שלום צוות גנבוק, הייתי רוצה לשתף משוב עימכם...</string>
+	<string name="action_settings">הגדרות</string>
+	<string name="title_activity_login">כניסה</string>
+	<string name="title_activity_parent_details">פרטי הורה</string>
+	<string name="title_activity_settings">הגדרות</string>
+	<string name="title_activity_class_name">שם כיתה</string>
+	<string name="title_activity_enter_email">הקלד אימייל</string>
+	<string name="login">כניסה</string>
+	<string name="register">הירשם</string>
+	<string name="close_promo_btn">סגור</string>
+	<string name="open_promo_btn">פתח</string>
+	<string name="next">הבא</string>
+	<string name="signup">רישום</string>
+	<string name="email_hint">כתובת אימייל</string>
+	<string name="cont">המשך</string>
+	<string name="pass">סיסמא</string>
+	<string name="username_not_specified">חסר שם פרטי</string>
+	<string name="error">סיסמא או יוזר לא נכונים אנא נסה שוב</string>
+	<string name="edit_techer_details">פרטי גננת</string>
+	<string name="edit_parent_details">עריכת פרטי הורה</string>
+	<string name="change_password">שנה סיסמא</string>
+	<string name="illegal_password">סיסמא לא חוקית</string>
+	<string name="edit_teacher_details">פרטי גננת</string>
+	<string name="search_here">חפש כאן</string>
+	<string name="enter_kid_name">הזן שם ילד</string>
+	<string name="add_photo">הוסף תמונה</string>
+	<string name="birth_date">תאריך לידה</string>
+	<string name="i_am_hint">אני:</string>
+	<string name="girl">בת</string>
+	<string name="rate_us">דרג אותנו בחנות</string>
+	<string name="logout">יציאה</string>
+	<string name="feedback">שלח לנו משוב</string>
+	<string name="show_faq">שאלות ותשובות</string>
+	<string name="parent_details">פרטי הורה</string>
+	<string name="name">שם</string>
+	<string name="home_number">טלפון בבית</string>
+	<string name="kindergarten_phone2">טלפון בגן</string>
+	<string name="addess">כתובת</string>
+	<string name="city">עיר</string>
+	<string name="country">ארץ</string>
+	<string name="State">מדינה</string>
+	<string name="district">מחוז</string>
+	<string name="some_text">Some Text</string>
+	<string name="add_class_caption">הוסף כיתה</string>
+	<string name="add_class_sidemenu">הוסף כיתה</string>
+	<string name="enter_class_name">הקלד שם כיתה</string>
+	<string name="example">לדוגמא: כיתת אפרוחים, כיתת קטנטנים &#8230;</string>
+	<string name="add_kid">הוסף ילד</string>
+	<string name="title_activity_registration">תהליך הרשמה</string>
+	<string name="title_activity_enter_code">הקלד קוד</string>
+	<string name="title_activity_add_child">הקלד ילד</string>
+	<string name="welcome">שלום</string>
+	<string name="welcome_text_line1">כל הכבוד!</string>
+	<string name="welcome_text_line2">נירשמת בהצלחה.</string>
+	<string name="welcome_text_line3">עכשיו תוכל להכניס את פרטי ילדך,אם יש לך יותר מילד אחד תוכל להקליד פרטיו בשלב מאוחר יותר.</string>
+	<string name="welcome_text_line3_teacher">כעת ניתן להגדיר את פרטי הגן ושמות הכיתות ולהתחיל לשתף את ההורים בתמונות והודעות.</string>
+	<string name="add_kid_btn">+ הוסף ילד</string>
+	<string name="add_class_btn">+ הוסף כיתה חדשה</string>
+	<string name="full_name">שם הורה/צוות /גננ/ת</string>
+	<string name="reigster_aknowledge_text">בעת יצירת חשבון באפליקציית GanBook אני מאשר/ת בזאת כי קראתי, הבנתי ואני מסכים ל- </string>
+	<string name="add_code">הקלד קוד</string>
+	<string name="enter_code_text">הקלד קוד אותו קיבלת מהגננת</string>
+	<string name="enter_code">הקלד קוד</string>
+	<string name="enter_code_msg">יש להקליד קוד תקין</string>
+	<string name="request_code">אם לא קיבלת קוד אנא פנה לגננת.</string>
+	<string name="save">שמור</string>
+	<string name="home_scrren_text">The new way for teachers to\nshare messages and photos\nwith parents.</string>
+	<string name="confirm">אשר</string>
+	<string name="confirmed">אושר</string>
+	<string name="boy">בן</string>
+	<string name="unknown">לא ידוע</string>
+	<string name="see_more">ראה עוד</string>
+	<string name="invite_other_parents">הזמן הורים אחרים לכיתה:</string>
+	<string name="invite">הזמן</string>
+	<string name="not_connected_yet">ילדיך לא מחוברים לאף כיתה עדיין</string>
+	<string name="log_out_link">&lt;a href="#">התנתק&lt;/a></string>
+	<string name="too_many_images_selected">ניתן לבחור עד %1$s תמונות</string>
+	<string name="entry_screen_text_line1">הילדים שלי , הגננות שלהם ואני&#8230;</string>
+	<string name="entry_screen_text_line2">שיתוף תמונות ומידע עם ההורים בצורה מאובטחת, פשוטה ומהירה!</string>
+	<string name="i_am">אני:</string>
+	<string name="done">סיים</string>
+	<string name="select_class">בחר כיתה</string>
+	<string name="edit_kid">ערוך ילד</string>
+	<string name="privacy_terms">תנאי פרטיות</string>
+    <string name="terms_of_service">תנאי השירות</string>
+    <string name="and">ו</string>
+    
+    <string name="mom">אמא</string>
+    <string name="dad">אבא</string>
+    <string name="teacher">גנן/ת</string>
+    
+    <string name="rename_album_txt">הכנס שם אלבום:</string>
+    
+    <string name="empty_albums_list">לא הועלו אלבומים</string>
+    
+    <string name="invitation_parent_subject">הזמנה לגנבוק‎</string>
+    <string name="invitation_parent_body_part_1">הורים יקרים, 
+הגן שלנו התחיל להשתמש באפליקציית גנבוק לשיתוף תמונות והודעות עם ההורים. על מנת שגם אתם תוכלו לקבל הודעות ולצפות בתמונות, אנא הורידו את האפליקציה כאן: http://ganbook.co.il/store_download.html
+לאחר ההתקנה תתבקשו להזין קוד רישום. קוד הרישום הינו</string>
+
+    <string name="new_version_avail">גירסא חדשה זמינה.</string>
+    <string name="new_version_critical">עדכון זה מכיל עידכונים הכרחיים ולכן הכרחי. אנו מצטערים על אי הנוחות.</string>
+    
+    <string name="update">עדכן</string>
+	<string name="notnow">לא כרגע</string>
+	<string name="please_select_class">אנא בחר/י כיתה:</string>
+	
+	<string name="internet_offline">נראה כי החיבור לאינטרנט אינו פעיל</string>
+	<string name="error_offline">שגיאה</string>
+	
+	<string name="new_year_title">סמן את הילדים שממשיכים לשנה חדשה בכיתת</string>
+	
+	<string name="back">חזור</string>
+	<string name="kids_moving_next_year">הילדים שעוברים לשנה החדשה</string>
+
+	<string name="try_again">נסה שוב</string>
+	
+	<string name="load_failed_try_again">הטעינה נכשלה, משוך שוב לרענון</string>	
+	
+	<string name="pic_upload_failed">קליטת האינטרנט נמוכה. העלאת התמונות תתחדש אוטמטית ברגע שקליטת האינטרנט תשתפר</string>
+	
+	 <string name="more_upload_when_finish">התמונות בתהליך שליחה, ניתן להעלות תמונות נוספות ברגע שיסתיים</string>
+	 
+	 <string name="press_to_refresh">לחץ כאן לריענון</string>
+	 
+	 <string name="share_vid_subject">סרטון מ</string>
+	 
+	 <string name="watch_video">לצפייה בסרטון לחץ/י כאן</string>
+
+	<string name="new_year_albums_text">טרם הועלו אלבומים. לחצ/י על ה "+" כדי ליצור אלבום חדש.</string>
+
+	<string name="or">או</string>
+
+	<string name="stay_school">המשך באותו גן</string>
+
+	<string name="end_year">שנת 2016 הסתיימה</string>
+
+	<string name="thanks">הבנתי, תודה.</string>
+	<string name="end_year_text_teacher"> הרישום לשנת הלימודים 2017 החל.\n כל המידע משנה שעברה נשמר ועבר להיסטוריה, ניתן לגשת למידע הישן בכל עת.\n\n  הוראות רישום להורים לשנת הלימודים החדשה נשלחה לתיבת הדואר שלכם.\n להזכירכם קוד הגן הוא: %1$s\n\n  ההורים יקבלו הודעה מיוחדת מאיתנו עם הוראות כיצד להרשם.\n באפשרותם לבחור להישאר באותו הגן או להרשם לגן חדש.\n\n   בהצלחה בשנה החדשה!</string>
+	<string name="end_year_text_parent"> הרישום לשנת הלימודים 2017 החל,\n כל המידע משנה שעברה נשמר ועבר להיסטוריה.\n (ניתן לגשת למידע הישן בכל עת)\n\n באפשרותכם לבחור להישאר באותו הגן או להתחבר לגן חדש, כל שעליכם לעשות הוא להכניס קוד גן ולהמתין לאישור הגננת.\n\n בהצלחה בשנה החדשה!</string>
+	<string name="disconnect">התנתק מהכיתה</string>
+	<string name="disconnect_text">האם את/ה בטוח/ה שברצונך להתנתק מהכיתה?</string>
+	<string name="more">עוד</string>
+	<string name="remove_user">הסר משתמש</string>
+	<string name="change_class">שינוי כיתה</string>
+	<string name="choose_kid_class">בחר כיתה חדשה ל %1$s</string>
+	<string name="disconnect_text_teacher">האם את/ה בטוח/ה שאת/ה רוצה לנתק את הילד מהכיתה?</string>
+	<string name="kid_data_incompete">אנא מלא/י את כל השדות</string>
+	<string name="viewed_str">%1$d מ %2$s צפו</string>
+	<string name="enter_valid_code_msg">הקוד לא קיים, אנא הכנס קוד תקין.</string>
+	<string name="new_year">שנה חדשה</string>
+	<string name="downloading_file_please_wait">מוריד תמונות, אנא המתן...</string>
+	<string name="delete_opt">מחק אלבום</string>
+	<string name="delete_album_text">האם את/ה בטוח/ה שאת/ה רוצה למחוק את האלבום?</string>
+	<string name="choose_pass">בחר סיסמא</string>
+	<string name="assign_pta">הוסף ועד</string>
+	<string name="message_from_pta">הודעה מהועד:</string>
+	<string name="PTA">ועד</string>
+	<string name="no_pta_defined">לא נבחר ועד בכיתה</string>
+	<string name="title_activity_pta">בחר ועד</string>
+	<string name="edit_comment" >ערוך תגובה</string>
+	<string name="pta_explain" >הועד יכול לשלוח הודעות</string>
+	<string name="type_comment">הוסף תגובה</string>
+	<string name="comments">תגובות</string>
+	<string name="contacts">דף קשר</string>
+	<string name="parent">הורה</string>
+	<string name="of">של</string>
+	<string name="mother">אמא</string>
+	<string name="father">אבא</string>
+	<string name="delete_comment">מחק תגובה</string>
+	<string name="empty_comments_list">אין עדין תגובות!</string>
+	<string name="delete_comment_pop_text">האם את/ה בטוח/ה שאת/ה רוצה למחוק את התגובה?</string>
+	<string name="download_all_album">ברצונך להוריד את כל התמונות שבאלבום למכשיר?</string>
+	<string name="favorites">מועדפים</string>
+	<string name="saved_to_favorites">נשמר למועדפים</string>
+	<string name="removed_from_favorites">הוסר מהמועדפים</string>
+
+	<string name="favorites_empty1">אין מועדפים, לחץ על</string>
+	<string name="favorites_empty2">על מנת לשמור את התמונה או הסרטון</string>
+
+	<string name="empty_events_list">אין אירועים!</string>
+
+	<string name="birthday">יום הולדת</string>
+	<string name="to">ל</string>
+	<string name="delete_event">מחק אירוע</string>
+	<string name="day_off">יום חופש</string>
+	<string name="yes">כן</string>
+	<string name="no">לא</string>
+	<string name="kids_participate">ילדים משתתפים:</string>
+	<string name="remarks">הערות:</string>
+	<string name="all_kids">כל הילדים</string>
+	<string name="no_comments">אין הערות</string>
+
+	<string name="likes">לייקים</string>
+
+	<string name="existing_video_library">בחירת סרטון מהגלריה</string>
+	<string name="btn_upload_video">שלח/י להורים את הסרטון</string>
+
+	<string name="too_many_videos_selected">ניתן לבחור עד %1$s סרטונים</string>
+
+	<string name="prepare_video_upload">מכין סרטון להעלאה</string>
+	<string name="add_event">הוסף אירוע</string>
+
+	<string name="kabbalat_shabbat">קבלת שבת</string>
+	<string name="vacation">חופשה</string>
+	<string name="trip">טיול</string>
+	<string name="other">אחר</string>
+
+	<string name="select_type">בחר/י סוג אירוע</string>
+	<string name="all_day">יום שלם</string>
+
+	<string name="select_kids_title">כל מי שמסומן ברשימה יקבל הודעת תזכורת לפני האירוע</string>
+
+	<string name="select_one_kid">נא לבחור לפחות ילד אחד</string>
+	<string name="event_data_incomplete">אנא מלא את כל שדות האירוע</string>
+	<string name="All">כל</string>
+	<string name="Day">היום</string>
+	<string name="from">מ-</string>
+	<string name="until">עד</string>
+	<string name="select_event_type">אנא בחר/י סוג אירוע</string>
+	<string name="saving_event">האירוע נשמר בהצלחה</string>
+
+	<string name="edit_event">ערוך אירוע</string>
+	<string name="event_title">שם האירוע</string>
+	<string name="new_feature_text">הוספנו יומן אירועים של הגן.\n
+יומן האירועים נוצר באופן אוטומטי עם כל ימי ההולדת של הילדים,
+הגננת יכולה להוסיף פעילויות כמו חגים, טיולים, חופשות ועוד…\n
+ההורים יכולים לצפות ולקבל תזכורות על כל הפעילות הרלוונטית
+של האירועים בגן בצורה מסודרת.\n\n
+
+תהנו!\n
+צוות גנבוק‎‎</string>
+	<string name="new_updates">עדכונים חדשים</string>
+	<string name="delete_event_text">האם את/ה בטוח/ה שאת/ה רוצה למחוק את האירוע?</string>
+	<string name="cancel_changes">לבטל את השינויים?</string>
+	<string name="cancel_changes_explanation">אם תחזור/תחזרי עכשיו, הטיוטה שלך תבוטל.</string>
+	<string name="continue_">המשך/המשיכי</string>
+	<string name="are_you_sure_delete">האם אתה בטוח שברצונך למחוק ציור?</string>
+	<string name="no_data">אין נתונים זמינים</string>
+	<string name="error_loading_pictures">שגיאה בהעלאת התמונות</string>
+	<string name="deleting_pictures">מחיקת תמונות...</string>
+	<string name="error_deleting_pictures">שגיאה בעת מחיקת התמונות</string>
+	<string name="uploaded">עלה</string>
+	<string name="of_hint">של</string>
+	<string name="pictures">תמונות</string>
+
+	<string name="send_photo">שלח תמונות</string>
+	<string name="delete_pic">מחק תמונות</string>
+	<string name="loading_pictures">טוען את התמונות...</string>
+	<string name="not_selected_pictures">לא נבחרו תמונות</string>
+	<string name="school_name">שם בית הספר</string>
+
+	<string name="error_update_class">שגיאה בעת עריכת הכיתה</string>
+	<string name="error_set_class">שגיאה בעת שמירת הכיתה</string>
+	<string name="delete">מחק</string>
+
+	<string name="error_send_message">Error while send message</string>
+	<string name="error_get_kids">Error while loading kids</string>
+	<string name="error_load_messages">Error while load messages</string>
+	<string name="error_delete_album">Error while delete album</string>
+	<string name="error_rename_album">Error while rename album</string>
+	<string name="error_activate_kid">Error while activate kid</string>
+	<string name="error_load_comments">Error while load comments</string>
+	<string name="error_while_add_comment">Error while add new comment</string>
+	<string name="error_delete_comment">Error while delete comment</string>
+	<string name="error_update_comment">Error while update comment</string>
+	<string name="error_read_message">Error while read message</string>
+	<string name="error_update_password">Error while update password</string>
+	<string name="error_create_kid">Error while create kid</string>
+	<string name="batch_uploading">אנא המתן לסיום תהליך העלאה. רק לאחר מכן ניתן לשלוח עוד תמונות או סרטונים.</string>
+	<string name="album">אלבום</string>
+	<string name="check_video">תהליך העלאה של הוידאו נכשל, אנא בדוק אם הקבוץ תקין</string>
+	<string name="connection_error">שגיאה בהתחברות לאינטרנט</string>
+	<string name="error_load_pic">העלאת תמונה נכשלה, אנא נסי שוב</string>
+	<string name="photo_not_found">תמונה חסרה</string>
+
+	<string name="add_location_text">סמן מיקום לגן</string>
+	<string name="pickup_drop_hours_text">הורדה/איסוף</string>
+	<string name="kid_drop_text">הורדה</string>
+	<string name="kid_pickup_text">איסוף</string>
+	<string name="title_activity_pick_drop">PickDropActivity</string>
+	<string name="notifications">התראות</string>
+	<string name="select_parents">התראות הורים</string>
+	<string name="select_parents_info">בחר הורים לקבלת התראה על איסוף/ הורדה בגן</string>
+	<string name="pickup_drop_hours_error">Please, enter valid hours.</string>
+	<string name="drop_off_warning">האם הורדת את ילדך היום?</string>
+	<string name="pick_up_warning">האם אספת את ילדך היום?</string>
+
+    <string name="drop_off_gps_warning">על פי מיקום הגי.פי.אס ראינו שאתה ליד הגן. האם הורדת את ילדך?</string>
+    <string name="pick_up_gps_warning">על פי מיקום הגי.פי.אס ראינו שאתה ליד הגן. האם אספת את ילדך?</string>
+    <string name="location_saved">מיקום גי.פי.אס נשמר</string>
+
+	<string name="warning">Warning</string>
+
+	<string name="from2">עד</string>
+	<string name="to2">מ</string>
+
+	<!-- FOR TUTORIAL -->
+	<string name="sign_in_tap">לחץ לכניסה</string>
+	<string name="register_tap">לחץ להרשמה</string>
+	<string name="add_album_tap">לחץ להוספת אלבום</string>
+	<string name="albums_tap">אלבומים</string>
+	<string name="comments_tap">הודעות</string>
+	<string name="contacts_tap">דף קשר</string>
+	<string name="events_tap">ארועים</string>
+	<string name="institution_logo_tap">לחץ להוספת לוגו גן</string>
+	<string name="register_tap_title">הירשם</string>
+	<string name="sign_in_tap_title">התחברות</string>
+	<string name="albums_tap_title">אלבומים</string>
+	<string name="comments_tap_title">הערות</string>
+	<string name="contacts_tap_title">"אנשי קשר "</string>
+	<string name="events_tap_title">אירועים</string>
+	<string name="add_album_tap_title">"הוסף אלבום "</string>
+	<string name="institution_logo_tap_title">"לוגו מוסד "</string>
+    <string name="album_description_hint">תאור אלבום</string>
+    <string name="update_description_btn">"עדכון תיאור "</string>
+	<string name="description_updated_successfully">התאור עודכן בהצלחה</string>
+    <string name="select_album_thumb">"בחר תמונה ממוזערת של אלבום "</string>
+    <string name="sutff_string">דברים</string>
+    <string name="staff_string">צוות</string>
+    <string name="add_staff_btn">+ הוסף צוות</string>
+	<string name="add_staff">הוסף צוות</string>
+	<string name="staff_details_header">"פרטי צוות "</string>
+	<string name="empty_string"></string>
+	<string name="thumb_updated">התמונה התעדכנה בהצלחה</string>
+	<string name="attendenceText">דף נוכחות</string>
+	<string name="choose_picture_alert">בחר תמונה</string>
+	<string name="add_thumb_alert">על מנת לבחור תמונת שער עליך לעלות לפחות תמונה אחת לאלבום</string>
+    <string name="who_viewed_album">מי צפה באלבום - </string>
+    <string name="album_no_viewers">אין צופים באלבום זה</string>
+	<string name="edit_staff_header">ערוך צוות</string>
+	<string name="edit_staff_details">פרטי צוות</string>
+    <string name="drawing_album_succeed">הצלחת</string>
+	<string name="drawing_album_created">אלבום ציור נוצר בהצלחה </string>
+	<string name="drawing_album_error">שגיאה</string>
+	<string name="drawing_album_server_error">שגיאת שרת</string>
+	<string name="drawing_album_for_kid">נכון שהילדים מציירים המון ציורים בגן? כאן תוכלו לשמור אותם</string>
+	<string name="drawing_album_warning">יש למלא</string>
+	<string name="drawing_album_name_warning">נא להוסיף שם אלבום</string>
+	<string name="drawing_upload_succeed">התמונות נשמרו בהצלחה</string>
+	<string name="drawing_upload_title_description">נא הוסף תאור או נושא</string>
+	<string name="drawing_choose_take_warning">אנא בחר או צלם תמונה</string>
+    <string name="drawings_text">שמירת ציורי ילדים</string>
+	<string name="drawing_album_name_placeholder">שם האלבום</string>
+	<string name="drawing_add_story_text">הוסף ציור וסיפור</string>
+    <string name="drawing_title_description_placeholder">"הוסף כותרת או תיאור "</string>
+    <string name="image_upload_alert_title">העלאת תמונה</string>
+    <string name="sidebar_invite_text">להזמין</string>
+    <string name="keyboard_close_text">סיים</string>
+	<string name="tutorial_page_1_title">ברוכים הבאים ל GanBook</string>
+	<string name="tutorial_page_1_title_apparent">ברוכים הבאים ל Apparent</string>
+	<string name="tutorial_page_1_content">כאן תוכלו לראות את החוויות של ילדיכם בגן. המשיכו הלאה…….</string>
+	<string name="tutorial_page_1_content_apparent">כאן תוכלו לראות את החוויות של ילדיכם בכיתה. המשיכו הלאה…….</string>
+	<string name="tutorial_page_2_title">יצירת חשבון</string>
+	<string name="tutorial_page_2_content">היי…. הנה אנחנו שוב, נעים להכיר. אם את/ה גננ/ת הורה או צוות כאן תיצרו חשבון!</string>
+	<string name="tutorial_page_2_content_apparent">היי…. הנה אנחנו שוב, נעים להכיר. אם את/ה מורה, הורה או צוות כאן תיצרו חשבון!</string>
+	<string name="tutorial_page_3_title">אלבומים</string>
+	<string name="tutorial_page_3_content">שתפו/קבלו אלבומי תמונות וקטעי וידאו בצורה קלה ופשוטה ישר מ/אל הטלפון הנייד שלכם ובזמן אמת. התמונות לא תופסות מקום על המכשיר. השיתוף לא היה פשוט כל כך מאז ומעולם.</string>
+	<string name="tutorial_page_4_title">הודעות</string>
+	<string name="tutorial_page_4_content">כאן תוכלו לשלוח/לקבל הודעות מהגננת.  לא ניתן להגיב להודעות, רק לצפות.</string>
+	<string name="tutorial_page_4_content_apparent">כאן תוכלו לשלוח/לקבל הודעות מהמורה.  לא ניתן להגיב להודעות, רק לצפות.</string>
+	<string name="tutorial_page_5_title">"דף קשר "</string>
+	<string name="tutorial_page_5_content">כל פרטי הקשר של ההורים והילדים מרוכזים ברשימה אחת קלה לשימוש. ניתן ליצור קשר עם ההורים באמצעות מייל, סמס או שיחת טלפון.רק הגננת אחראית לאשר או לבטל גישה להורים בכיתה.</string>
+	<string name="tutorial_page_5_content_apparent">כל פרטי הקשר של ההורים והילדים מרוכזים ברשימה אחת קלה לשימוש. ניתן ליצור קשר עם ההורים באמצעות מייל, סמס או שיחת טלפון.רק המורה אחראי/ת לאשר או לבטל גישה להורים בכיתה.</string>
+	<string name="tutorial_page_6_title">ציורים</string>
+	<string name="tutorial_page_6_content">כהורה, כאן תוכלו לשמור את כל הציורים שילדיכם יוצרים בגן ובבית!</string>
+	<string name="tutorial_page_6_content_apparent">כהורה, כאן תוכלו לשמור את כל הציורים שילדיכם יוצרים בכיתה ובבית!</string>
+	<string name="tutorial_page_7_title">יומן ארועים</string>
+	<string name="tutorial_page_7_content">לוח השנה של הגן נוצר באופן אוטומטי עם כל ימי ההולדת של הילדים, הגננת יכולה להוסיף פעילויות כמו חגים, טיולים, חופשות ועוד… ההורים יכולים לצפות ולקבל תזכורות על כל הפעילות הרלוונטית של האירועים בגן בצורה מסודרת.</string>
+	<string name="tutorial_page_7_content_apparent">לוח השנה של הכיתה נוצר באופן אוטומטי עם כל ימי ההולדת של הילדים, המורה יכול/ה להוסיף פעילויות כמו חגים, טיולים, חופשות ועוד… ההורים יכולים לצפות ולקבל תזכורות על כל הפעילות הרלוונטית של האירועים בכיתה בצורה מסודרת.</string>
+	<string name="tutorial_finish_btn">סיום</string>
+    <string name="institution_logo_error_text">שגיאה בהעלאת לוגו</string>
+    <string name="student">תלמיד</string>
+    <string name="drawing_audio_empty">אין הקלטת קול לתמונה זו</string>
+    <string name="add_student_text">הוסף תלמיד</string>
+	<string name="enter_student_name">הוסף שם תלמיד</string>
+	<string name="student_details_text">פרטי תלמיד</string>
+	<string name="edit_student_text">ערוך פרטי תלמיד</string>
+	<string name="student_list_text">רשימת תלמידים</string>
+    <string name="student_info_text">פרטי סטודנט</string>
+    <string name="upload_file_text">העלה קובץ</string>
+	<string name="paste_url_text">העתק כתובת אתר</string>
+	<string name="send_text">שלח</string>
+    <string name="send_attachment_text">צרף קבצים</string>
+    <string name="document_title_string">קבצים</string>
+	<string name="upload_documents_string">צרף קובץ</string>
+	<string name="title_string">נושא</string>
+	<string name="please_provide_information_string">הוסף תאור לקובץ</string>
+	<string name="attach_document_string">צרף קובץ</string>
+	<string name="no_documents_string">לא הועלו קבצים לכיתה זו</string>
+	<string name="required_string">שדה חובה</string>
+	<string name="all_fields_required">יש למלא את כל השדות</string>
+	<string name="please_attach_document_string">יש לצרף קובץ</string>
+    <string name="attachments_string">קבצים</string>
+	<string name="delete_document_string">מחיקת קובץ</string>
+	<string name="are_you_sure_string">האם אתה בטוח שברצונך למחוק את הקובץ?</string>
+    <string name="max_file_size_20mb">לא ניתן לעלות קובץ הגדול מ 20 mb</string>
+	<string name="record_audio_string">הקלט הודעה</string>
+	<string name="press_for_record_string">לחץ להקלטה</string>
+    <string name="document_attached_string">קובץ מצורף</string>
+    <string name="allow_camera_text">פתח מצלמה לצוות</string>
+    <string name="photo_description_text">תאור אלבום</string>
+	<string name="dialog_close_text">סגור</string>
+    <string name="fifteen_mins_block_text">נחסמת ל 15 דקות. אנא נסה מאוחר יותר</string>
+    <string name="meeting_available_text">פנוי</string>
+	<string name="meeting_unavailable_text">תפוס</string>
+	<string name="meeting_hours_title">זמני מפגש</string>
+	<string name="add_meeting_title">הוסף מפגש</string>
+    <string name="meetings_text">יום הורים</string>
+    <string name="time_slot_duration_text">מס׳ דק׳ למפגש</string>
+	<string name="attendees_list_title">רשימת משתתפים</string>
+	<string name="meeting_title_text">נושא</string>
+	<string name="meeting_select_start_date_text">בחר תאריך התחלה</string>
+	<string name="meeting_select_end_date">בחר תאריך סיום</string>
+	<string name="meeting_enter_comment_text">כתוב תאור מפגש</string>
+	<string name="meeting_start_text">התחלה</string>
+    <string name="end_time_error_text">נא לבחור שעת סיום נכונה</string>
+	<string name="meeting_end_text">סיום</string>
+    <string name="events_text">יום הורים</string>
+    <string name="delete_meeting_text">מחק פגישה</string>
+	<string name="delete_meeting_message_text">האם אתה בטוח שברצונך למחוק את הפגישה?</string>
+	<string name="no_meetings_text">אין עדיין יום הורים</string>
+    <string name="meeting_push_text">הורים יקרים נא להרשם ליום ההורים</string>
+</resources>

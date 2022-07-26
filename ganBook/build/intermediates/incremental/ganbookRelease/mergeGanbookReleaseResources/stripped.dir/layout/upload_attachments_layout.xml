@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/atachmentListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="10dp"
+        app:contentPadding="5dp"
+        app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/attachmentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="25sp"
+        android:background="@color/transparent"
+        android:hint="@string/title_string"/>
+    <View
+        android:id="@+id/attachmentDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/attachmentTitle"
+        android:background="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/attachmentDescription"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingTop="10dp"
+        android:background="@color/transparent"
+        android:layout_below="@+id/attachmentDivider"
+        android:gravity="start|top"
+        android:lines="10"
+        android:inputType="textMultiLine"
+        android:hint="@string/please_provide_information_string"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_blue"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:itemBackground="@color/light_blue"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/upload_attachment_menu"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardView">
+        <ImageView
+            android:id="@+id/fileImageSelected"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_file" />
+        <TextView
+            android:id="@+id/fileNameSelected"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="File name"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_toEndOf="@+id/fileImageSelected"/>
+
+            <ProgressBar
+                android:id="@+id/fileProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fileNameSelected"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

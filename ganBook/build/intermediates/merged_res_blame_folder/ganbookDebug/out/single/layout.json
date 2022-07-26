@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-mergeGanbookDebugResources-63:\\layout\\fragment_picture_details.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-main-68:\\layout\\fragment_picture_details.xml"
+    },
+    {
+        "merged": "com.project.ganim.ganBook-mergeGanbookDebugResources-63:/layout/fragment_picture_details.xml",
+        "source": "com.project.ganim.ganBook-main-68:/layout/fragment_picture_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-mergeGanbookDebugResources-63:\\layout\\item_message.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-main-68:\\layout\\item_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-mergeGanbookDebugResources-63:\\layout\\item_drawing_album_details.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-main-68:\\layout\\item_drawing_album_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-mergeGanbookDebugResources-63:\\layout\\fragment_messages.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-main-68:\\layout\\fragment_messages.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-mergeGanbookDebugResources-63:\\layout\\fragment_album_drawings_details.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-main-68:\\layout\\fragment_album_drawings_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-mergeGanbookDebugResources-63:\\layout\\item_grid_gallery.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-main-68:\\layout\\item_grid_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-mergeGanbookDebugResources-63:\\layout\\fragment_album_details.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-main-68:\\layout\\fragment_album_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-mergeGanbookDebugResources-63:\\layout\\item_preview.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-main-68:\\layout\\item_preview.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-mergeGanbookDebugResources-63:\\layout\\item_image_album_details.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-main-68:\\layout\\item_image_album_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-mergeGanbookDebugResources-63:\\layout\\header_album_list.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-main-68:\\layout\\header_album_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-mergeGanbookDebugResources-63:\\layout\\like_layout.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-main-68:\\layout\\like_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-mergeGanbookDebugResources-63:\\layout\\item_album_list.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\7.3.3\\com.project.ganim.ganBook-main-68:\\layout\\item_album_list.xml"
+    }
+]

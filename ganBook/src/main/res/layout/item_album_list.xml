@@ -1,0 +1,323 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="album"
+            type="com.ganbook.models.AlbumsAnswer" />
+
+        <variable
+            name="preview"
+            type="String" />
+
+        <variable
+            name="showNewLabel"
+            type="boolean" />
+
+        <variable name="photosTitle" type="String" />
+
+        <variable name="videosTitle" type="String" />
+
+        <import type="com.ganbook.utils.DateFormatter" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent_album_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:padding="8dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/album_off"
+            bind:picPath="@{preview}"/>
+
+        <ImageView
+            android:id="@+id/heart_active_center"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:src="@drawable/heart_active" />
+
+        <ImageView
+            android:visibility="@{!showNewLabel ? 4 : 0}"
+            android:id="@+id/new_image"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/new_ribbon" />
+
+        <RelativeLayout
+            android:visibility="@{!showNewLabel ? 4 : 0}"
+            android:id="@+id/notify_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="24dp"
+            >
+            <ImageView
+                android:id="@+id/num_new_image"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/number_ribbon" />
+
+            <TextView
+                android:id="@+id/num_new_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@{String.valueOf(album.unseenPhotos)}"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/single_image_menu"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/album_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/album_details_layout"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center_vertical"
+                android:text="@{album.albumName}"
+                android:singleLine="true"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:id="@+id/album_details_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/album_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="@{DateFormatter.formatForAlbumList(album.albumDate)}"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:visibility="@{album.picCount == 0 ? 4 : 0}"
+                    android:id="@+id/num_pics_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/dot"/>
+
+                <TextView
+                    android:visibility="@{album.picCount == 0 ? 4 : 0}"
+                    android:id="@+id/num_photos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="@{photosTitle}"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:visibility="@{album.videosCount == 0 ? 4 : 0}"
+                    android:id="@+id/num_videos_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/dot"/>
+
+
+                <TextView
+                    android:id="@+id/num_videos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:text="@{videosTitle}"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_likes_icons"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_above="@+id/album_title"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="-21dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/layout_comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/comments_image"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/num_comments"
+                        android:src="@drawable/comments" />
+
+                    <TextView
+                        android:id="@+id/num_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:text="@{String.valueOf(album.commentsCount)}"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/likes_image_base"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/base" />
+
+                        <ViewSwitcher
+                            android:id="@+id/switcher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:inAnimation="@anim/fadein_like"
+                            android:outAnimation="@anim/fadeout_like">
+
+                            <ImageView
+                                android:id="@+id/heart_inactive"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/heart_inactive"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/heart_active"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/heart_active"
+                                android:visibility="gone" />
+                        </ViewSwitcher>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/num_likes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@{String.valueOf(album.likesCount)}"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/description_image"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/num_comments"
+                        android:src="@drawable/description" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/views_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/eye"/>
+
+        <TextView
+            android:id="@+id/num_views_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:layout_toRightOf="@+id/views_image"
+            android:layout_marginLeft="5dp"
+            android:text="@{String.valueOf(album.albumViews)}"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</layout>

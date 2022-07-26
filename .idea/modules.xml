@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ganbook_darko.iml" filepath="$PROJECT_DIR$/.idea/modules/ganbook_darko.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ganBook/ganbook_darko.ganBook.iml" filepath="$PROJECT_DIR$/.idea/modules/ganBook/ganbook_darko.ganBook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ganBook/ganbook_darko.ganBook.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ganBook/ganbook_darko.ganBook.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ganBook/ganbook_darko.ganBook.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ganBook/ganbook_darko.ganBook.unitTest.iml" />
+    </modules>
+  </component>
+</project>

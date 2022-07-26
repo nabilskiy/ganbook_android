@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/app_bar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background"
+        android:orientation="vertical"
+    	android:layout_marginBottom="12dp" 
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@+id/school_root">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/school_name"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/school_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_text_height"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/school_name"
+                    android:inputType="textEmailAddress"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:textColorHint="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/name"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/name"
+                android:inputType="textEmailAddress"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/home_number_caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/home_number"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/home_number"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/phone_number"
+                android:inputType="number"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mobile"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/mobile"
+                android:inputType="number"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/addess"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/addess"
+                android:inputType="textPostalAddress"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/city"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/class_cap_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/class_name"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/class_1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/class_cap_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/class_name"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/class_2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/class_cap_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/class_name"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/class_3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/class_cap_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/class_name"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/class_4"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/class_cap_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/class_name"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/class_5"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/class_cap_6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/class_name"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/class_6"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/class_cap_7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/class_name"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/class_7"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/class_cap_8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/class_name"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/class_8"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@android:color/darker_gray" />
+            
+            <RelativeLayout 
+                android:id="@+id/kid_cap_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:visibility="gone"
+                android:layout_marginTop="15dp" >
+                
+	            <com.ganbook.ui.CircleImageView
+			        android:id="@+id/profile_image_1"
+			        xmlns:app="http://schemas.android.com/apk/res-auto"
+			        android:layout_width="40dp"
+			        android:layout_height="40dp"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerInParent="true"
+			        android:layout_marginLeft="10dp"
+			        android:scaleType="centerCrop" 
+			        android:src="@drawable/add_pic_default"
+			        app:border_color="@android:color/white"
+			        app:border_width="2dp" >
+			    </com.ganbook.ui.CircleImageView>
+		    
+            	<TextView
+            	    android:id="@+id/kid_name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image_1"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            	
+            	<TextView
+            	    android:id="@+id/kid_bd_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image_1"
+                    android:layout_below="@+id/kid_name_1"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            	
+            	<TextView
+			        android:id="@+id/kid_gender_1"
+			        android:layout_width="50dp"
+			        android:layout_height="30dp"
+			        android:layout_toLeftOf="@+id/arrow_1"
+			        android:layout_centerInParent="true"
+			        android:layout_marginRight="10dp"
+			        android:textSize="12sp"
+			        android:textColor="@android:color/white"
+			        android:contentDescription="@string/app_name"
+                    style="@style/KidGenderButton" />
+            	
+            	<ImageButton
+			        android:id="@+id/arrow_1"
+			        android:layout_width="10dp"
+			        android:layout_height="22dp"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerInParent="true"
+			        android:layout_marginRight="20dp"
+			        android:background="@drawable/arrow" 
+			        android:contentDescription="@string/app_name"/>
+                
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/kid_cap_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:visibility="gone"
+                android:layout_marginTop="15dp" >
+                
+	            <com.ganbook.ui.CircleImageView
+			        android:id="@+id/profile_image_2"
+			        xmlns:app="http://schemas.android.com/apk/res-auto"
+			        android:layout_width="40dp"
+			        android:layout_height="40dp"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerInParent="true"
+			        android:layout_marginLeft="10dp"
+			        android:scaleType="centerCrop" 
+			        android:src="@drawable/add_pic_default"
+			        app:border_color="@android:color/white"
+			        app:border_width="2dp" >
+			    </com.ganbook.ui.CircleImageView>
+		    
+            	<TextView
+            	    android:id="@+id/kid_name_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image_2"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            	
+            	<TextView
+            	    android:id="@+id/kid_bd_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image_2"
+                    android:layout_below="@+id/kid_name_2"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            	
+            	<TextView
+			        android:id="@+id/kid_gender_2"
+			        android:layout_width="50dp"
+			        android:layout_height="30dp"
+			        android:layout_toLeftOf="@+id/arrow_2"
+			        android:layout_centerInParent="true"
+			        android:layout_marginRight="10dp"
+			        android:textSize="12sp"
+			        android:textColor="@android:color/white"
+			        android:contentDescription="@string/app_name"
+                    style="@style/KidGenderButton" />
+            	
+            	<ImageButton
+			        android:id="@+id/arrow_2"
+			        android:layout_width="10dp"
+			        android:layout_height="22dp"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerInParent="true"
+			        android:layout_marginRight="20dp"
+			        android:background="@drawable/arrow" 
+			        android:contentDescription="@string/app_name"/>
+                
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/kid_cap_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:visibility="gone"
+                android:layout_marginTop="15dp" >
+                
+	            <com.ganbook.ui.CircleImageView
+			        android:id="@+id/profile_image_3"
+			        xmlns:app="http://schemas.android.com/apk/res-auto"
+			        android:layout_width="40dp"
+			        android:layout_height="40dp"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerInParent="true"
+			        android:layout_marginLeft="10dp"
+			        android:scaleType="centerCrop" 
+			        android:src="@drawable/add_pic_default"
+			        app:border_color="@android:color/white"
+			        app:border_width="2dp" >
+			    </com.ganbook.ui.CircleImageView>
+		    
+            	<TextView
+            	    android:id="@+id/kid_name_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image_3"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            	
+            	<TextView
+            	    android:id="@+id/kid_bd_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image_3"
+                    android:layout_below="@+id/kid_name_3"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            	
+            	<TextView
+			        android:id="@+id/kid_gender_3"
+			        android:layout_width="50dp"
+			        android:layout_height="30dp"
+			        android:layout_toLeftOf="@+id/arrow_3"
+			        android:layout_centerInParent="true"
+			        android:layout_marginRight="10dp"
+			        android:textSize="12sp"
+			        android:textColor="@android:color/white"
+			        android:contentDescription="@string/app_name"
+                    style="@style/KidGenderButton" />
+            	
+            	<ImageButton
+			        android:id="@+id/arrow_3"
+			        android:layout_width="10dp"
+			        android:layout_height="22dp"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerInParent="true"
+			        android:layout_marginRight="20dp"
+			        android:background="@drawable/arrow" 
+			        android:contentDescription="@string/app_name"/>
+                
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/kid_cap_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:visibility="gone"
+                android:layout_marginTop="15dp" >
+                
+	            <com.ganbook.ui.CircleImageView
+			        android:id="@+id/profile_image_4"
+			        xmlns:app="http://schemas.android.com/apk/res-auto"
+			        android:layout_width="40dp"
+			        android:layout_height="40dp"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerInParent="true"
+			        android:layout_marginLeft="10dp"
+			        android:scaleType="centerCrop" 
+			        android:src="@drawable/add_pic_default"
+			        app:border_color="@android:color/white"
+			        app:border_width="2dp" >
+			    </com.ganbook.ui.CircleImageView>
+		    
+            	<TextView
+            	    android:id="@+id/kid_name_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image_4"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            	
+            	<TextView
+            	    android:id="@+id/kid_bd_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image_4"
+                    android:layout_below="@+id/kid_name_4"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            	
+            	<TextView
+			        android:id="@+id/kid_gender_4"
+			        android:layout_width="50dp"
+			        android:layout_height="30dp"
+			        android:layout_toLeftOf="@+id/arrow_4"
+			        android:layout_centerInParent="true"
+			        android:layout_marginRight="10dp"
+			        android:textSize="12sp"
+			        android:textColor="@android:color/white"
+			        android:contentDescription="@string/app_name"
+                    style="@style/KidGenderButton" />
+            	
+            	<ImageButton
+			        android:id="@+id/arrow_4"
+			        android:layout_width="10dp"
+			        android:layout_height="22dp"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerInParent="true"
+			        android:layout_marginRight="20dp"
+			        android:background="@drawable/arrow" 
+			        android:contentDescription="@string/app_name"/>
+                
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/kid_cap_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:visibility="gone"
+                android:layout_marginTop="15dp" >
+                
+	            <com.ganbook.ui.CircleImageView
+			        android:id="@+id/profile_image_5"
+			        xmlns:app="http://schemas.android.com/apk/res-auto"
+			        android:layout_width="40dp"
+			        android:layout_height="40dp"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerInParent="true"
+			        android:layout_marginLeft="10dp"
+			        android:scaleType="centerCrop" 
+			        android:src="@drawable/add_pic_default"
+			        app:border_color="@android:color/white"
+			        app:border_width="2dp" >
+			    </com.ganbook.ui.CircleImageView>
+		    
+            	<TextView
+            	    android:id="@+id/kid_name_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image_5"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#66CCFF"
+                    android:textSize="20sp" />
+            	
+            	<TextView
+            	    android:id="@+id/kid_bd_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image_5"
+                    android:layout_below="@+id/kid_name_5"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            	
+            	<TextView
+                    style="@style/KidGenderButton"
+			        android:id="@+id/kid_gender_5"
+			        android:layout_width="50dp"
+			        android:layout_height="30dp"
+			        android:layout_toLeftOf="@+id/arrow_5"
+			        android:layout_centerInParent="true"
+			        android:layout_marginRight="10dp"
+			        android:textSize="12sp"
+			        android:textColor="@android:color/white"
+			        android:contentDescription="@string/app_name"/>
+            	
+            	<ImageButton
+			        android:id="@+id/arrow_5"
+			        android:layout_width="10dp"
+			        android:layout_height="22dp"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerInParent="true"
+			        android:layout_marginRight="20dp"
+			        android:background="@drawable/arrow" 
+			        android:contentDescription="@string/app_name"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

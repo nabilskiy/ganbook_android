@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background">
+
+
+    <ProgressBar
+        android:id="@+id/pbHeaderProgress"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ProgressBar>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refresh_layout"
+        android:layout_above="@+id/send_msg_panel"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/message_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="3pt"
+                android:stackFromBottom="true"
+                android:transcriptMode="alwaysScroll"
+                android:scrollbars="none" >
+            </ListView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/send_msg_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:background="#F6F6F6"
+        android:orientation="vertical"
+        >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/darker_gray"
+                />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/type_message"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            />
+
+
+
+<!--
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#F6F6F6"
+                android:padding="5dp"
+                android:orientation="horizontal"
+               >
+
+                <EditText
+                    android:id="@+id/new_msg_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:singleLine="false"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/type_message"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />-->
+
+<!--
+                <ViewSwitcher
+                    android:id="@+id/switcher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/smiley"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/smiley" />
+
+                    <ImageView
+                        android:id="@+id/keyboard"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/keyboard" />
+                </ViewSwitcher>
+
+
+                <com.rockerhieu.emojicon.EmojiconEditText
+                    android:id="@+id/editEmojicon"
+                    android:hint="@string/type_message"
+                    android:layout_gravity="center_vertical"
+                    emojicon:emojiconSize="28sp"
+                    android:singleLine="false"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textSize="20sp"
+                    android:text="Send"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+-->
+<!--
+            <LinearLayout
+                android:id="@+id/footer_for_emoticons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <FrameLayout
+                    android:id="@+id/emojicons"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp" />
+            </LinearLayout>-->
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="1dp"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+		android:id="@+id/contaxt_tab"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/contact_bg"
+        android:layout_centerInParent="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+    
+     <RelativeLayout
+        android:id="@+id/notify_layout"
+        android:layout_width = "25dp"
+    	android:layout_height = "25dp"
+    	android:layout_marginTop="5dp"
+	    android:layout_marginRight="15dp"
+	    android:visibility="gone"
+    	android:layout_alignParentRight="true"
+    	android:layout_alignParentTop="true">
+    
+	    <ImageView android:id="@+id/notify"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+	        android:layout_centerInParent="true"
+	        android:background="@drawable/red"
+	    />
+	    
+	     <TextView android:id="@+id/num"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textSize="12sp"
+	        android:text="100"
+	        android:textColor="@android:color/white"
+	    />    
+    </RelativeLayout>
+    
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/boy_on" android:state_checked="true"/>
+ <!-- checked -->
+    <item android:drawable="@drawable/boy_off"/>
+ <!-- default/unchecked -->
+
+</selector>

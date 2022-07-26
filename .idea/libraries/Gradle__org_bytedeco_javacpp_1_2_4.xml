@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bytedeco:javacpp:1.2.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacpp/1.2.4/e65b978e42d71a9c39f33324450488c55982d0c4/javacpp-1.2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacpp/1.2.4/76a8eff91f3a705d579a0b5a7fd2fc2fd4c01d31/javacpp-1.2.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacpp/1.2.4/33d432f344385063dc9323acd1839f2d671946fe/javacpp-1.2.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">213959356519-ms8616e8lrv0divh0k5v72qobmftkkgr.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://ganbook-f5c88.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">213959356519</string>
+    <string name="google_api_key" translatable="false">AIzaSyCy1IHOVKUzYjWnuVYbZ-OM6D4TwQqaUKc</string>
+    <string name="google_app_id" translatable="false">1:213959356519:android:5009349714d6e745</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCy1IHOVKUzYjWnuVYbZ-OM6D4TwQqaUKc</string>
+    <string name="google_storage_bucket" translatable="false">ganbook-f5c88.appspot.com</string>
+    <string name="project_id" translatable="false">ganbook-f5c88</string>
+</resources>

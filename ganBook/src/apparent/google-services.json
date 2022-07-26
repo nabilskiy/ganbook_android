@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "213959356519",
+    "firebase_url": "https://ganbook-f5c88.firebaseio.com",
+    "project_id": "ganbook-f5c88",
+    "storage_bucket": "ganbook-f5c88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213959356519:android:5009349714d6e745",
+        "android_client_info": {
+          "package_name": "com.apparent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213959356519-ms8616e8lrv0divh0k5v72qobmftkkgr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy1IHOVKUzYjWnuVYbZ-OM6D4TwQqaUKc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

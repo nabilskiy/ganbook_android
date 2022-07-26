@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/drawer_item"
+	android:layoutDirection="ltr"
+    android:background="#EDEDED" >
+
+    <com.ganbook.ui.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_image"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:scaleType="centerCrop" />
+    
+    <RelativeLayout
+        android:id="@+id/notify_layout"
+        android:layout_width = "25dp"
+    	android:layout_height = "25dp"
+    	android:layout_marginTop="5dp"
+	    android:layout_marginLeft="5dp"
+	    android:visibility="gone"
+    	android:layout_alignParentLeft="true"
+    	android:layout_alignParentTop="true">
+    
+	    <ImageView android:id="@+id/notify"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+	        android:layout_centerInParent="true"
+	        android:background="@drawable/red"
+	    />
+	    
+	     <TextView android:id="@+id/num"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textSize="12sp"
+	        android:text="100"
+			 android:textColor="#2E2E30"
+	    />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/item_image"
+        android:layout_centerInParent="true"
+        android:gravity="left|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/upper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:textSize="18sp"
+			android:textColor="#2E2E30" />
+
+		<TextView
+            android:id="@+id/lower_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+			android:textColor="#2E2E30" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

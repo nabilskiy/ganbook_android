@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.project.ganim.ganBook-mergeGanbookDebugResources-62:/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "D:\\sasha\\ganbook_full\\ganbook darko\\ganBook\\src\\main\\res\\values-v11\\styles.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "177",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "309"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "109",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "192"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\e5bb96ccdf9c4d236fe718ad0aea30e1\\transformed\\jetified-android-file-chooser-v1.1.10\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "53",
+                        "endOffsets": "104"
+                    }
+                }
+            ]
+        }
+    ]
+}

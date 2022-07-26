@@ -1,0 +1,133 @@
+
+                                                   
+
+    
+
+                 
+                        
+                            
+
+                 
+                           
+                                                                 
+
+           
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:clickable="true"
+    tools:context="com.ganbook.fragments.PictureDetailsFragment" android:tag="layout/fragment_picture_details_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <com.ganbook.ui.zoomable.ExtendedViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/zoom_header"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/single_image_header_menu">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="binding_1"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/zoom_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:background="@drawable/single_image_menu">
+
+        <ImageButton
+            android:id="@+id/upload_btn"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/upload_btn" />
+
+        <ImageButton
+            android:id="@+id/share_pict_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/switcher"
+            android:background="@drawable/share"
+            android:contentDescription="@string/app_name" />
+
+        <ViewSwitcher
+            android:id="@+id/switcher"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/view"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/base">
+            <!--android:inAnimation="@anim/fadein_like"
+            android:outAnimation="@anim/fadeout_like" >-->
+
+            <ImageView
+                android:id="@+id/fav_inactive"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:src="@drawable/fav_inactive" />
+
+            <ImageView
+                android:id="@+id/fav_active"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:src="@drawable/fav_active" />
+        </ViewSwitcher>
+
+        <ImageButton
+            android:id="@+id/save_right_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/addPhotoCommentBtn"
+            android:background="@drawable/download"
+            android:text="@string/save"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/addPhotoCommentBtn"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="35dp"
+            android:layout_toEndOf="@+id/switcher"
+            android:background="@drawable/description_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="0dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+         

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_height="60dp">
+
+    <RelativeLayout
+        android:id="@+id/hour_layout"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        >
+
+        <ImageView
+            android:id="@+id/event_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/present"
+            android:tint="@color/red"
+            />
+
+        <com.ganbook.ui.CircleImageView
+            android:id="@+id/profile_image"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:border_color="@android:color/white"
+            app:border_width="0.5dp" >
+        </com.ganbook.ui.CircleImageView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/blue_seperator"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#70B2E0"
+        android:layout_toRightOf="@+id/hour_layout"
+        />
+
+    <RelativeLayout
+        android:id="@+id/event_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/blue_seperator"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/event_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:text="Petro ptrov's birthday"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#6d6d6d"
+            android:maxLines="1"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

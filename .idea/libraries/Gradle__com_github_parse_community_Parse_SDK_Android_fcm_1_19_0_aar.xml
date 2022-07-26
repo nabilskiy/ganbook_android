@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.parse-community.Parse-SDK-Android:fcm:1.19.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4c16bfaa85e27e662ba7f08d29cf927c/transformed/jetified-fcm-1.19.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9b1cd335fd22f836b02cb118b7de177a/transformed/jetified-fcm-1.19.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9b1cd335fd22f836b02cb118b7de177a/transformed/jetified-fcm-1.19.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9b1cd335fd22f836b02cb118b7de177a/transformed/jetified-fcm-1.19.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.parse-community.Parse-SDK-Android/fcm/1.19.0/6399405e975b0d36dfd0e8f9b11ed5c101cdadb6/fcm-1.19.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.parse-community.Parse-SDK-Android/fcm/1.19.0/596128fe0700803bd8d65864f73b3f94a99824b5/fcm-1.19.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

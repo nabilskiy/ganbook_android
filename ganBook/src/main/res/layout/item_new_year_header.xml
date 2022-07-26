@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    		android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical">
+	
+	
+	<TextView 
+	    android:id="@+id/header"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/album_caption_bg" 
+	    android:padding="10dp"
+	    android:gravity="center"
+	    android:lines="2"
+	    android:text="header\nnoa"
+	    android:textColor="@android:color/white"
+	    android:textSize="17sp"
+	    android:textStyle="bold" />
+</LinearLayout>

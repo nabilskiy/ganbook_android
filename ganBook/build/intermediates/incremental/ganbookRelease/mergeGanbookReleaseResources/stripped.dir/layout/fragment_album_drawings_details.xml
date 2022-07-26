@@ -1,0 +1,83 @@
+                                                             
+    
+
+                 
+                        
+                                                      
+
+                 
+                           
+                             
+                 
+                          
+                             
+
+
+                 
+                             
+                             
+
+           
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/apparent_white"
+    android:clickable="true"
+    android:id="@+id/androidAlbumsFragment"
+    tools:context="com.ganbook.fragments.AlbumDrawingsDetailsFragment" android:tag="layout/fragment_album_drawings_details_0" xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drawing_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:id="@+id/album_detail_progressbar"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_bar">
+
+        <LinearLayout
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:background="#DCDCDC"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/user_action_button"
+            android:visibility="visible"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:id="@+id/delete_btn"
+            android:tag="binding_1"                   
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/lower_panel_delete"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+         

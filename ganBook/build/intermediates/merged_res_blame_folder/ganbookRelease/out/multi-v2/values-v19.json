@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.project.ganim.ganBook-mergeGanbookReleaseResources-62:/values-v19/values-v19.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\55595a04aa8e0cc3abe6585e8d55daf0\\transformed\\jetified-pix-1.2.5\\res\\values-v19\\values-v19.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,113,169,225,289,331",
+                        "endColumns": "57,55,55,63,41,46",
+                        "endOffsets": "108,164,220,284,326,373"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "140,198,254,310,374,416",
+                        "endColumns": "57,55,55,63,41,46",
+                        "endOffsets": "193,249,305,369,411,458"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\e5bb96ccdf9c4d236fe718ad0aea30e1\\transformed\\jetified-android-file-chooser-v1.1.10\\res\\values-v19\\values-v19.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,98",
+                        "endColumns": "42,41",
+                        "endOffsets": "93,135"
+                    }
+                }
+            ]
+        }
+    ]
+}

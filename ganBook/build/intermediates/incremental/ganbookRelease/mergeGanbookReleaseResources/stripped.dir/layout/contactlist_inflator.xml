@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:textColor="@android:color/black"
+    android:textSize="20sp" 
+    android:padding="5dp">
+
+    <com.ganbook.ui.CircleImageView
+        android:id="@+id/profile_image"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop" 
+        android:src="@drawable/add_pic_default"
+        app:border_color="@android:color/white"
+        app:border_width="2dp" >
+    </com.ganbook.ui.CircleImageView>
+
+    <TextView
+        android:id="@+id/cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/pta_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/arrow"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"
+        android:text="@string/PTA"
+        android:textColor="@android:color/holo_blue_dark"
+        android:visibility="gone"
+        android:textSize="18sp" >
+    </TextView>
+
+    <Switch
+        android:visibility="gone"
+        android:id="@+id/kid_arrival_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="30dp"
+        android:track="@drawable/switch_track_custom" />
+
+    <ImageButton
+        android:id="@+id/edit_kid_details"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@+id/pta_text"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:background="@drawable/description"
+        android:contentDescription="@string/app_name"/>
+
+    <ImageButton
+        android:id="@+id/arrow"
+        android:layout_width="10dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/arrow" 
+        android:contentDescription="@string/app_name"/>
+    
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/more_btn"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/cont"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/entry_button_selector"
+        android:text="@string/confirm"
+        android:layout_centerVertical="true"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textColor="@android:color/white"/> 
+        
+    <Button
+        android:id="@+id/confirmed_btn"
+        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/more_btn"
+        android:layout_below="@+id/cont"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/green_selector"
+        android:text="@string/confirmed"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/more_btn"
+        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/arrow"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/cont"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/entry_button_selector"
+        android:text="@string/more"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

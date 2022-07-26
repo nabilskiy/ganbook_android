@@ -1,0 +1,55 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="message"
+            type="com.ganbook.models.MessageModel" />
+
+        <variable
+            name="viewed"
+            type="String" />
+
+        <variable
+            name="date"
+            type="String" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/item_press_selector"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatview_bg"
+            android:layout_gravity="center_horizontal"
+            android:autoLink="web"
+            android:textColorLink="@color/white"
+            android:padding="6dp"
+            android:text="@{message.messageText}"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_day_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@{date}" />
+
+        <TextView
+            android:id="@+id/tv_day_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center_horizontal"
+            android:text="@{viewed}" />
+
+    </LinearLayout>
+</layout>

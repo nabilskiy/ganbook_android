@@ -1,0 +1,65 @@
+        
+
+    
+
+                 
+                              
+                                                        
+
+           
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:padding="5dp"  android:tag="layout/item_grid_gallery_0">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_image" />
+
+    <CheckBox
+        android:tag="binding_1"                                
+        android:id="@+id/selection_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+                                                 
+        android:button="@drawable/selection_check_selector" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_transparent">
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:tag="binding_2"                                                              />
+
+        <TextView
+            android:padding="3dp"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/indicator"
+            android:tag="binding_3"               
+            android:ellipsize="start"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:shadowColor="@color/TransparentGrey"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1.5"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+         

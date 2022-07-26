@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/app_bar_layout"
+        />
+
+    <EditText
+        android:id="@+id/enter_kid_name"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/edit_bg"
+        android:hint="@string/enter_kid_name"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <LinearLayout
+        android:id="@+id/add_pic_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <com.ganbook.ui.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_pic_default"
+            app:border_color="@android:color/darker_gray"
+            app:border_width="2dp" >
+        </com.ganbook.ui.CircleImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="@string/add_photo"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <com.ganbook.ui.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calander"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bith_default"
+            app:border_color="@android:color/darker_gray"
+            app:border_width="2dp" >
+        </com.ganbook.ui.CircleImageView>
+
+        <TextView
+            android:id="@+id/set_birth_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="@string/birth_date"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/i_am"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/i_am_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/i_am" />
+
+        <RadioGroup
+            android:id="@+id/rg_group"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/girl_staff"
+                android:layout_width="59dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="@dimen/smily_margin"
+                android:background="@drawable/rd_back_girl_staff"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/boy_staff"
+                android:layout_width="53dp"
+                android:layout_height="59dp"
+                android:layout_marginLeft="@dimen/smily_margin"
+                android:background="@drawable/rd_back_boy_staff"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/girl"
+                android:layout_width="53dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="@dimen/smily_margin"
+                android:background="@drawable/rd_back_girl"
+                android:button="@null"
+                />
+
+            <RadioButton
+                android:id="@+id/boy"
+                android:layout_width="45dp"
+                android:layout_height="69dp"
+                android:layout_marginLeft="@dimen/smily_margin"
+                android:background="@drawable/rd_back_boy"
+                android:button="@null"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/disconnect"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="class 1 - gan"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/disconnect_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/disconnect_button_selector"
+            android:text="@string/disconnect"
+            android:textSize="15sp"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    </LinearLayout>

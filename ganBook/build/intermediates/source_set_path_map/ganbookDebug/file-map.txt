@@ -1,0 +1,69 @@
+com.project.ganim.ganBook-jetified-prettydialog-1.0.4-0 C:\Users\user\.gradle\caches\transforms-3\0088aaecf67d6f015b41e639ea26528c\transformed\jetified-prettydialog-1.0.4\res
+com.project.ganim.ganBook-constraintlayout-2.1.4-1 C:\Users\user\.gradle\caches\transforms-3\017b363fa9560d97e9696ed0b036ac0b\transformed\constraintlayout-2.1.4\res
+com.project.ganim.ganBook-fragment-1.3.6-2 C:\Users\user\.gradle\caches\transforms-3\0719b329a362042ea298b2a90e8bcc88\transformed\fragment-1.3.6\res
+com.project.ganim.ganBook-jetified-expandablerecyclerview-2.1.1-3 C:\Users\user\.gradle\caches\transforms-3\078e232ecdff3acbcc717ec7b107f940\transformed\jetified-expandablerecyclerview-2.1.1\res
+com.project.ganim.ganBook-jetified-annotation-experimental-1.1.0-4 C:\Users\user\.gradle\caches\transforms-3\0fe9d9a6f3f377a221d51d0ed046eb0e\transformed\jetified-annotation-experimental-1.1.0\res
+com.project.ganim.ganBook-jetified-materialdatetimepicker-3.0.0-5 C:\Users\user\.gradle\caches\transforms-3\134107aa07860e2cca07668ae394e696\transformed\jetified-materialdatetimepicker-3.0.0\res
+com.project.ganim.ganBook-drawerlayout-1.1.1-6 C:\Users\user\.gradle\caches\transforms-3\14a5576bf79e1f3c9c52db66d13cb7a9\transformed\drawerlayout-1.1.1\res
+com.project.ganim.ganBook-appcompat-1.6.0-alpha05-7 C:\Users\user\.gradle\caches\transforms-3\1a5db43382064bde32fed4816eb41b40\transformed\appcompat-1.6.0-alpha05\res
+com.project.ganim.ganBook-lifecycle-viewmodel-2.5.0-rc01-8 C:\Users\user\.gradle\caches\transforms-3\279ba7832b1f044560841ade187f9c8f\transformed\lifecycle-viewmodel-2.5.0-rc01\res
+com.project.ganim.ganBook-jetified-lifecycle-process-2.4.1-9 C:\Users\user\.gradle\caches\transforms-3\2885645f91b4ed2b78a88c345db7a928\transformed\jetified-lifecycle-process-2.4.1\res
+com.project.ganim.ganBook-coordinatorlayout-1.1.0-10 C:\Users\user\.gradle\caches\transforms-3\2c7a7ac82857bebc57c127347b56eb7d\transformed\coordinatorlayout-1.1.0\res
+com.project.ganim.ganBook-jetified-RollingLayoutManager-1.0-11 C:\Users\user\.gradle\caches\transforms-3\3340254ca5831e5796b6c2701555018d\transformed\jetified-RollingLayoutManager-1.0\res
+com.project.ganim.ganBook-jetified-activity-1.6.0-alpha05-12 C:\Users\user\.gradle\caches\transforms-3\35322835e89a0abc6cc32836952aec69\transformed\jetified-activity-1.6.0-alpha05\res
+com.project.ganim.ganBook-jetified-library-1.3.1-13 C:\Users\user\.gradle\caches\transforms-3\3576a9c79951efea2b3fd7e18c83c0b8\transformed\jetified-library-1.3.1\res
+com.project.ganim.ganBook-lifecycle-livedata-core-2.5.0-rc01-14 C:\Users\user\.gradle\caches\transforms-3\35f347996b12e5164f702ccec09d9142\transformed\lifecycle-livedata-core-2.5.0-rc01\res
+com.project.ganim.ganBook-recyclerview-1.3.0-beta01-15 C:\Users\user\.gradle\caches\transforms-3\366c595aecb5e2440bdbbf20c0b77ff5\transformed\recyclerview-1.3.0-beta01\res
+com.project.ganim.ganBook-jetified-tutoshowcase-1.0.1-16 C:\Users\user\.gradle\caches\transforms-3\41480bde3ba1ff7a9edc897dedca8da4\transformed\jetified-tutoshowcase-1.0.1\res
+com.project.ganim.ganBook-jetified-cue-1.1-17 C:\Users\user\.gradle\caches\transforms-3\4637586c88c404a270ab0a4b5cf1f6ba\transformed\jetified-cue-1.1\res
+com.project.ganim.ganBook-jetified-library-1.0.0-18 C:\Users\user\.gradle\caches\transforms-3\53e24a16c4464e0147f5aa45c8b9face\transformed\jetified-library-1.0.0\res
+com.project.ganim.ganBook-jetified-materialfilepicker-1.9.1-19 C:\Users\user\.gradle\caches\transforms-3\54c1ca6ca1df12e18af52f238b19326d\transformed\jetified-materialfilepicker-1.9.1\res
+com.project.ganim.ganBook-jetified-pix-1.2.5-20 C:\Users\user\.gradle\caches\transforms-3\55595a04aa8e0cc3abe6585e8d55daf0\transformed\jetified-pix-1.2.5\res
+com.project.ganim.ganBook-jetified-glide-4.12.0-21 C:\Users\user\.gradle\caches\transforms-3\56e74b8ff255f7a53e3f079fb272a53f\transformed\jetified-glide-4.12.0\res
+com.project.ganim.ganBook-jetified-emoji2-views-helper-1.2.0-alpha04-22 C:\Users\user\.gradle\caches\transforms-3\5b03edb20da1fb025d1ef4ee29ed2704\transformed\jetified-emoji2-views-helper-1.2.0-alpha04\res
+com.project.ganim.ganBook-jetified-superslim-0.4.13-23 C:\Users\user\.gradle\caches\transforms-3\5fdb7442a625b47ee3406911bd939289\transformed\jetified-superslim-0.4.13\res
+com.project.ganim.ganBook-databinding-adapters-7.2.1-24 C:\Users\user\.gradle\caches\transforms-3\6046b62b8ffd6a1019c9834da00144b9\transformed\databinding-adapters-7.2.1\res
+com.project.ganim.ganBook-jetified-om-recorder-1.1.5-25 C:\Users\user\.gradle\caches\transforms-3\6752b81b0cdc4e41c749e8b9d11ee521\transformed\jetified-om-recorder-1.1.5\res
+com.project.ganim.ganBook-jetified-library-5.4.3-26 C:\Users\user\.gradle\caches\transforms-3\677f3cb964778c19ce80b7a6d9203185\transformed\jetified-library-5.4.3\res
+com.project.ganim.ganBook-jetified-appcompat-resources-1.6.0-alpha05-27 C:\Users\user\.gradle\caches\transforms-3\6c1390bc64ee5a45758af0aada5e32c3\transformed\jetified-appcompat-resources-1.6.0-alpha05\res
+com.project.ganim.ganBook-jetified-play-services-basement-18.0.0-28 C:\Users\user\.gradle\caches\transforms-3\710d35b65ce6bac202c4c57b70b8ce0b\transformed\jetified-play-services-basement-18.0.0\res
+com.project.ganim.ganBook-jetified-RecordDialog-1.2.3-29 C:\Users\user\.gradle\caches\transforms-3\7560f2ee306312079dedc1103e3b1b86\transformed\jetified-RecordDialog-1.2.3\res
+com.project.ganim.ganBook-jetified-onboarder-1.0.4-30 C:\Users\user\.gradle\caches\transforms-3\768b4ceff5a9b7296d711cc56ee9c19d\transformed\jetified-onboarder-1.0.4\res
+com.project.ganim.ganBook-databinding-runtime-7.2.1-31 C:\Users\user\.gradle\caches\transforms-3\770f7f0deeb0b667e19d6cec22f08a15\transformed\databinding-runtime-7.2.1\res
+com.project.ganim.ganBook-jetified-drawee-1.10.0-32 C:\Users\user\.gradle\caches\transforms-3\772e8d3227f6e25429b20f52a2abd0f5\transformed\jetified-drawee-1.10.0\res
+com.project.ganim.ganBook-jetified-firebase-messaging-23.0.6-33 C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\res
+com.project.ganim.ganBook-lifecycle-runtime-2.5.0-rc01-34 C:\Users\user\.gradle\caches\transforms-3\866a57caa168b6f177ae2c485e0a361d\transformed\lifecycle-runtime-2.5.0-rc01\res
+com.project.ganim.ganBook-jetified-startup-runtime-1.1.1-35 C:\Users\user\.gradle\caches\transforms-3\8e2fe1992c970160a4ed318a4cd62e86\transformed\jetified-startup-runtime-1.1.1\res
+com.project.ganim.ganBook-media-1.0.0-36 C:\Users\user\.gradle\caches\transforms-3\903eafafdd6a1a2c6d62ba0aec4e0049\transformed\media-1.0.0\res
+com.project.ganim.ganBook-jetified-AutoFitEditText-53238e2d29-37 C:\Users\user\.gradle\caches\transforms-3\a18140e380309d233b7f580d40da3953\transformed\jetified-AutoFitEditText-53238e2d29\res
+com.project.ganim.ganBook-material-1.6.1-38 C:\Users\user\.gradle\caches\transforms-3\a4640be5cab5129d559c8de25d891113\transformed\material-1.6.1\res
+com.project.ganim.ganBook-jetified-sneaker-1.0.3-39 C:\Users\user\.gradle\caches\transforms-3\a9fccec998668bf37232780a1f30d1ba\transformed\jetified-sneaker-1.0.3\res
+com.project.ganim.ganBook-jetified-firebase-common-20.1.1-40 C:\Users\user\.gradle\caches\transforms-3\aa2526fc86caeab2a017847077afd6ec\transformed\jetified-firebase-common-20.1.1\res
+com.project.ganim.ganBook-jetified-viewpager2-1.0.0-41 C:\Users\user\.gradle\caches\transforms-3\b1fc78d2af00b595667989be63722a99\transformed\jetified-viewpager2-1.0.0\res
+com.project.ganim.ganBook-jetified-library-2.3.1-42 C:\Users\user\.gradle\caches\transforms-3\b5d814f6cf569999533884bf09b4c979\transformed\jetified-library-2.3.1\res
+com.project.ganim.ganBook-jetified-play-services-base-18.0.1-43 C:\Users\user\.gradle\caches\transforms-3\c220fc40b65323398e082cfa2435a83c\transformed\jetified-play-services-base-18.0.1\res
+com.project.ganim.ganBook-jetified-savedstate-1.2.0-rc01-44 C:\Users\user\.gradle\caches\transforms-3\c4f845589336b3e46f18735db642f6fa\transformed\jetified-savedstate-1.2.0-rc01\res
+com.project.ganim.ganBook-jetified-folding-cell-1.2.2-45 C:\Users\user\.gradle\caches\transforms-3\c9068d71eb50bb1f95ddbe7a19962c00\transformed\jetified-folding-cell-1.2.2\res
+com.project.ganim.ganBook-jetified-sweet-alert-dialog-v1.4.0-46 C:\Users\user\.gradle\caches\transforms-3\cfaff2e271c213e002b2f8370ed24f9a\transformed\jetified-sweet-alert-dialog-v1.4.0\res
+com.project.ganim.ganBook-jetified-core-ktx-1.9.0-alpha05-47 C:\Users\user\.gradle\caches\transforms-3\cfd6dfde9cd19197b7e977b8b022aa20\transformed\jetified-core-ktx-1.9.0-alpha05\res
+com.project.ganim.ganBook-jetified-materialish-progress-1.7-48 C:\Users\user\.gradle\caches\transforms-3\d05801d970709cea8dde132b8f1793bb\transformed\jetified-materialish-progress-1.7\res
+com.project.ganim.ganBook-jetified-fab-1.6.4-49 C:\Users\user\.gradle\caches\transforms-3\d7d959ce273d1fbf6b3816c9d093175b\transformed\jetified-fab-1.6.4\res
+com.project.ganim.ganBook-transition-1.2.0-50 C:\Users\user\.gradle\caches\transforms-3\e3cd48632cd93f987b887bf64f14b396\transformed\transition-1.2.0\res
+com.project.ganim.ganBook-cardview-1.0.0-51 C:\Users\user\.gradle\caches\transforms-3\e4171ab5590ff366033ca07198d7eddf\transformed\cardview-1.0.0\res
+com.project.ganim.ganBook-jetified-android-file-chooser-v1.1.10-52 C:\Users\user\.gradle\caches\transforms-3\e5bb96ccdf9c4d236fe718ad0aea30e1\transformed\jetified-android-file-chooser-v1.1.10\res
+com.project.ganim.ganBook-jetified-lifecycle-viewmodel-savedstate-2.5.0-rc01-53 C:\Users\user\.gradle\caches\transforms-3\e626bd696d44ecd318bca5e5c170e6ac\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.0-rc01\res
+com.project.ganim.ganBook-jetified-emoji2-1.2.0-alpha04-54 C:\Users\user\.gradle\caches\transforms-3\ece0ee234a8c02b962a7b49685ece0fc\transformed\jetified-emoji2-1.2.0-alpha04\res
+com.project.ganim.ganBook-jetified-customview-poolingcontainer-1.0.0-beta02-55 C:\Users\user\.gradle\caches\transforms-3\f563c3d18823efe0b728623765629265\transformed\jetified-customview-poolingcontainer-1.0.0-beta02\res
+com.project.ganim.ganBook-core-1.9.0-alpha05-56 C:\Users\user\.gradle\caches\transforms-3\f705e06d29ff2e566611ddc130b8c89d\transformed\core-1.9.0-alpha05\res
+com.project.ganim.ganBook-ganbook-57 D:\sasha\ganbook_full\ganbook darko\ganBook\build\generated\crashlytics\res\ganbook\debug
+com.project.ganim.ganBook-ganbook-58 D:\sasha\ganbook_full\ganbook darko\ganBook\build\generated\res\google-services\ganbook\debug
+com.project.ganim.ganBook-ganbook-59 D:\sasha\ganbook_full\ganbook darko\ganBook\build\generated\res\pngs\ganbook\debug
+com.project.ganim.ganBook-ganbook-60 D:\sasha\ganbook_full\ganbook darko\ganBook\build\generated\res\resValues\ganbook\debug
+com.project.ganim.ganBook-ganbook-61 D:\sasha\ganbook_full\ganbook darko\ganBook\build\generated\res\rs\ganbook\debug
+com.project.ganim.ganBook-mergeGanbookDebugResources-62 D:\sasha\ganbook_full\ganbook darko\ganBook\build\intermediates\incremental\ganbookDebug\mergeGanbookDebugResources\merged.dir
+com.project.ganim.ganBook-mergeGanbookDebugResources-63 D:\sasha\ganbook_full\ganbook darko\ganBook\build\intermediates\incremental\ganbookDebug\mergeGanbookDebugResources\stripped.dir
+com.project.ganim.ganBook-merged_res-64 D:\sasha\ganbook_full\ganbook darko\ganBook\build\intermediates\merged_res\ganbookDebug
+com.project.ganim.ganBook-debug-65 D:\sasha\ganbook_full\ganbook darko\ganBook\src\debug\res
+com.project.ganim.ganBook-ganbook-66 D:\sasha\ganbook_full\ganbook darko\ganBook\src\ganbook\res
+com.project.ganim.ganBook-ganbookDebug-67 D:\sasha\ganbook_full\ganbook darko\ganBook\src\ganbookDebug\res
+com.project.ganim.ganBook-main-68 D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\res

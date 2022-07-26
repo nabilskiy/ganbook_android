@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@id/app_bar"/>
+
+    <TextView
+        android:id="@+id/enter_code_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_below="@id/app_bar"
+        android:text="@string/enter_code_text"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size" />
+
+    <EditText
+        android:id="@+id/add_code"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_below="@+id/enter_code_text"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/edit_bg"
+        android:gravity="center"
+        android:hint="@string/enter_code"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:textColorHint="@android:color/darker_gray" />
+     <TextView
+        android:id="@+id/re_request_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/add_code"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:text="@string/request_code"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

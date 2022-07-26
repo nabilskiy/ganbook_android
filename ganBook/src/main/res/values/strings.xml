@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GanBook</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="type_message">Type a message</string>
+    <string name="bad_email_msg">Please enter a valid email address.</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="no_images_selected">No pictures were selected</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="albums">Albums</string>
+    <string name="not_if_empty">operation cannot be performed on an empty album</string>
+    <string name="operation_cannot_be_performed">Operation cannot be performed at the moment. Please try again later</string>
+
+
+    <string name="waiting_for_approval">Waiting for teacher\'s approval</string>
+    <string name="approal_check_later">Please check again a little later</string>
+
+
+    <string name="logount_pop_title">Logout</string>
+    <string name="popup_btn_ok">OK</string>
+    <string name="popup_btn_cancel">Cancel</string>
+    <string name="logount_pop_text">Are you sure you want to logout?</string>
+    <string name="upload_photo_text">Are you sure you want to upload theses photos?</string>
+    <string name="upload_video_text">Are you sure you want to upload this video?</string>
+
+    <string name="gan_data_incompete">Please fill all kindergarten fields</string>
+    <string name="kid_data_incompete">Please fill all kid fields</string>
+
+
+    <string name="send_btn">Send</string>
+    <string name="cancel_btn">Cancel</string>
+
+    <string name="existing_lib_opt">Existing Library</string>
+    <string name="new_pict_opt">Take New Picture</string>
+
+
+    <string name="empty_album">Album is empty</string>
+    <string name="empty_contact_list">No contacts were found</string>
+
+    <string name="empty_albums_list">No albums yet!</string>
+
+    <string name="photos_pref">photos</string>
+    <string name="videos_pref">videos</string>
+    <string name="video_pref">one video</string>
+
+
+    <string name="kids">kids</string>
+    <string name="parents">parents</string>
+    <string name="parent_details_header">Parent Details</string>
+
+
+    <string name="btn_upload">Send to parent</string>
+    <string name="btn_upload_video">Send video to parent</string>
+    <string name="upload_in_progress">Upload is now in progress. You will be notified on its completion</string>
+    <string name="upload_completed">Upload was successfully completed</string>
+    <string name="upload_completed_with_errors">an error occurred while uploading images</string>
+
+
+    <string name="add">Add</string>
+
+    <string name="add_album_sidemenu">Create Album</string>
+    <string name="album_name_hint">Album name</string>
+    <string name="new_album_caption">New Album</string>
+
+    <string name="kindergarten_name">Kindergarten Name</string>
+    <string name="kindergarten_phone">Phone</string>
+    <string name="kindergarten_address">Adderss</string>
+    <string name="kindergarten_city">City</string>
+    <string name="teacher_name">Teacher\'s Name</string>
+    <string name="teacher_mobile">Teacher\'s Mobile</string>
+
+
+    <string name="gallery">Gallery</string>
+    <string name="messages">Messages</string>
+    <string name="viewed">Viewed</string>
+
+    <string name="viewed_str">%1$d of %2$s viewed</string>
+
+    <string name="views_str">Views:</string>
+    <string name="send_email">Send</string>
+    <string name="caption_enter_code">Enter Code</string>
+    <string name="txt_send">Send</string>
+
+    <string name="select_class">Select Class</string>
+    <string name="done">Done</string>
+    <string name="please_select_class">Please select a class:</string>
+
+    <string name="select_opt">Select</string>
+    <string name="rename_opt">Change Album Name</string>
+
+    <string name="rename_album_txt">Enter album name:</string>
+
+
+    <string name="no_images_sel">At least one image must be selected</string>
+
+    <string name="kindergarten_code_pref">Kindergarten code:</string>
+
+
+    <string name="cannot_perform_op">operation could not be performed. Please try again later.</string>
+    <string name="operation_failed">operation could not be performed. Please try again later.</string>
+
+
+    <string name="error_loading_user">Error loading user from local cache</string>
+
+    <string name="current_pass">Current Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="verify_pass">Verify New Password</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="set_all_pass">All password values must be set</string>
+    <string name="not_verify_pass">New password verification failed</string>
+
+    <string name="lost_pass_title">Foergot Password</string>
+    <string name="on_lost_pass">Enter your email address and we will send you a link to reset your password</string>
+    <string name="lost_pass_notif">Please check your mail and reset your password</string>
+
+
+    <string name="viewed_by">Viewed by</string>
+    <string name="didnt_view">Didn\'t view</string>
+    <string name="total_str">Total: </string>
+    <string name="total_parents_str">Total Parents: </string>
+
+
+    <string name="invitation_subject">Ganbook Invitation</string>
+    <string name="invitation_body_part_1">Dear parents. Our School has started using the amazing Ganbook app for communication and photo sharing. You can download the app here: http://ganbook.co.il/store_download.html. After you register, use this code:</string>
+    <string name="invitation_body_part_2">, and connect to your kid\'s Class</string>
+
+    <string name="invitation_parent_subject">Ganbook Invitation</string>
+    <string name="invitation_parent_body_part_1">Hi, Our School has started using the amazing Ganbook app for communication and photo sharing. I have started using it and it absolutely brilliant. I thought you would like to try it too. You can download the app here: http://ganbook.co.il/store_download.html.\nSchool code is: </string>
+
+    <string name="whoami_not_set">Please specify who are you</string>
+    <string name="uploading_now_notif">Uploading is in progress..</string>
+
+
+    <string name="no_class_name">Class name must be specified</string>
+    <string name="no_album_name">Album name must be specified</string>
+
+    <string name="class_name">Class Name</string>
+
+
+    <string name="class_name_hint">Kindergarten Name</string>
+    <string name="kindergarten_details_title">Kindergarten Details</string>
+
+    <string name="class_phone_hint">Phone</string>
+    <string name="class_address_hint">Address</string>
+    <string name="class_city_hint">City</string>
+    <string name="class_teachername_hint">Teacher\'s Full Name</string>
+    <string name="class_teachermobile_hint">Teacher\'s Mobile</string>
+
+    <string name="operation_proceeding">Operation is proceeding. Please wait..</string>
+    <string name="operation_succeeded">Operation has been successfully completed.</string>
+
+
+    <string name="select_btn">Select</string>
+    <string name="add_album_btn">Add</string>
+
+    <string name="save_btn">Save</string>
+    <string name="btn_cancel_select">Cancel</string>
+    <string name="logged_out">User has been logged out</string>
+    <string name="btn_ok">OK</string>
+    <string name="processing_wait">Processing. Please wait...</string>
+    <string name="are_you_sure_delete">Are you sure you want to delete drawing?</string>
+    <string name="uploading_images_now">Uploading Images. This action may take some time...</string>
+    <string name="notif_title">GanBook</string>
+
+
+    <string name="saving_kid">Saving kid. Please wait...</string>
+    <string name="kid_successfully_added">Kid Successfully Saved</string>
+
+    <string name="invite_friend_subject">GanBook Invitation</string>
+    <string name="invite_friend_body">Hi, Our School has started using the amazing Ganbook app for communication and photo sharing. I have started using it and it absolutely brilliant. I thought you would like to try it in your School too. You can download the app here:http://ganbook.co.il/store_download.html.
+    </string>
+
+
+    <string name="existing_library">Existing Library</string>
+    <string name="existing_video_library">Existing Video</string>
+    <string name="take_new_pict">Take New Picture</string>
+    <string name="take_new_vid">Take New Video</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="share_via">Share Via</string>
+    <string name="share_pict_subject">Photos from</string>
+    <string name="share_vid_subject">Video from</string>
+    <string name="share_pict_body">Sent by GanBook application\n http://ganbook.co.il/store_download.html</string>
+
+    <string name="send_reminder">Send Reminder</string>
+
+
+    <array name="icons">
+        <item>@drawable/girldefault</item>
+        <item>@drawable/boydefault</item>
+        <item>@drawable/boy_off</item>
+    </array>
+
+    <string name="kindergarten">Kindergarten</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone number</string>
+    <string name="k_num">Kindergarten Number</string>
+    <string name="invite_parents">Invite Parents</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_zoom">ZoomActivity</string>
+    <string name="login_progress">Logging in. Please wait...</string>
+    <string name="register_progress">Registering. Please wait...</string>
+    <string name="add_kid_here">Add Kid Here</string>
+    <string name="add_class_here">Add Class Here</string>
+    <string name="contact_list_header">Contact List</string>
+    <string name="contact_profile_header">Contact Profile</string>
+    <string name="edit_parent_header">Edit Parent</string>
+    <string name="edit_btn">Edit</string>
+
+
+    <string name="feedback_subject">GanBook Feedback</string>
+    <string name="feedback_body">Hello GanBook team, I wish to share my feedback with you...</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_parent_details">ParentDetails</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_class_name">ClassName</string>
+    <string name="title_activity_enter_email">EnterEmail</string>
+    <string name="title_activity_pta">AssignPta</string>
+    <string name="login">Log In</string>
+    <string name="register">Register</string>
+    <string name="close_promo_btn">Close</string>
+    <string name="open_promo_btn">Open</string>
+    <string name="next">Next</string>
+    <string name="signup">Signup</string>
+    <string name="email_hint">Email Address</string>
+    <string name="cont">Continue</string>
+    <string name="pass">Password</string>
+    <string name="choose_pass">Choose Password</string>
+    <string name="username_not_specified">User name must be specified</string>
+
+    <string name="error">Wrong Username/Password,\nplease try again</string>
+    <string name="edit_teacher_details">Teacher Details</string>
+    <string name="edit_parent_details">Parent Details</string>
+
+    <string name="change_password">Change Password</string>
+    <string name="illegal_password">Illegal password</string>
+
+    <string name="rate_us">Rate Us in Store</string>
+    <string name="logout">Logout</string>
+    <string name="feedback">Send Us Feedback</string>
+    <string name="show_faq">Frequently Asked Questions</string>
+    <string name="parent_details">ParentDetails</string>
+    <string name="name">Name</string>
+    <string name="home_number">Home Number</string>
+    <string name="kindergarten_phone2">Kindergarten phone</string>
+    <string name="addess">Address</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="State">State</string>
+    <string name="district">District</string>
+    <string name="some_text">Some Text</string>
+    <string name="add_class_caption">Add Class</string>
+    <string name="add_class_sidemenu">Add Class</string>
+    <string name="enter_class_name">Enter Class Name</string>
+    <string name="example">For Example: Kid Squad, Fun Class etc &#8230;</string>
+    <string name="add_kid">Add Kid</string>
+    <string name="edit_kid">Edit Kid</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_enter_code">EnterCodeActivity</string>
+    <string name="title_activity_add_child">AddChildActivity</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_text_line1">Congratulations!</string>
+    <string name="welcome_text_line2">You have registered successfully.</string>
+    <string name="welcome_text_line3">Now you can add your kid details\n and class,if you have more than one \nkid you could add them later.</string>
+    <string name="welcome_text_line3_teacher">Now you can add your class and start sharing photos and messages with the parents.</string>
+    <string name="add_kid_btn">+ add Kid</string>
+    <string name="add_class_btn">+ add New Class</string>
+    <string name="full_name">Full Name</string>
+    <string name="reigster_aknowledge_text">By creating the GanBook user account you acknowledge\n that you have read ,understood and agree to the GanBook\n</string>
+    <string name="add_code">Add Code</string>
+    <string name="enter_code_text">Enter the code you recieved\nfrom the teacher</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="enter_code_msg">A valid code must be entered</string>
+    <string name="enter_valid_code_msg">The code youve entered does not exist. Please enter a valid code.</string>
+    <string name="request_code">If you have not received such a code\nplease contact the teacher.</string>
+    <string name="save">Save</string>
+    <string name="home_scrren_text">The new way for teachers to\nshare messages and photos\nwith parents.</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="girl">Girl</string>
+    <string name="boy">Boy</string>
+    <string name="unknown">unknown</string>
+
+    <string name="see_more">see more</string>
+
+    <string name="invite_other_parents">Invite other parents to class:</string>
+    <string name="invite">Invite</string>
+
+    <string name="not_connected_yet">Your kids are not connected to any school yet</string>
+
+    <string name="log_out_link">&lt;a href="#">Log out&lt;/a></string>
+
+    <string name="too_many_images_selected">Only %1$d images may be selected</string>
+
+    <string name="too_many_videos_selected">Only %1$d video may be selected</string>
+
+    <string name="entry_screen_text_line1">My children, their teachers &amp; me&#8230;</string>
+
+    <string name="entry_screen_text_line2">The new way for teachers to share messages and photos with parents</string>
+
+    <string name="i_am">I am:</string>
+
+    <string name="add_photo">Add Photo</string>
+
+    <string name="search_here">Search Here</string>
+
+    <string name="enter_kid_name">Enter kid name</string>
+
+    <string name="birth_date">Birth Date</string>
+
+    <string name="privacy_terms">Privacy Terms</string>
+    <string name="terms_of_service">Terms of use</string>
+
+    <string name="and">and</string>
+
+    <string name="mom">Mom</string>
+    <string name="dad">Dad</string>
+    <string name="teacher">Teacher</string>
+
+    <string name="new_version_avail">A new version is available.</string>
+    <string name="new_version_critical">this update contains critical fixes and must be used. We are sorry for the inconvenience.</string>
+
+    <string name="update">Update</string>
+    <string name="notnow">not now</string>
+
+    <string name="internet_offline">The internet connection appears to be offline.</string>
+    <string name="error_offline">Error</string>
+    <string name="new_year">New Year</string>
+
+    <string name="new_year_title">Please select the kids who join next year class: </string>
+
+    <string name="back">back</string>
+
+    <string name="kids_moving_next_year">The kids who join next year:</string>
+
+    <string name="try_again">Try again</string>
+
+    <string name="load_failed_try_again">Loading failed, pull to try again</string>
+
+    <string name="pic_upload_failed">Low quality connection. Upload resumes as soon as it improves</string>
+
+    <string name="more_upload_when_finish">The images are uploading. you could upload more images to the album once the process is done</string>
+
+    <string name="press_to_refresh">press to refresh</string>
+
+    <string name="watch_video">To watch the video click here</string>
+
+    <string name="new_year_albums_text">Click the "+" button to create a new album.</string>
+
+    <string name="or">OR</string>
+
+    <string name="stay_school">Stay in the same school</string>
+
+    <string name="empty_messages_list">No messages yet!</string>
+    <string name="empty_events_list">No events yet!</string>
+
+    <string name="end_year_text_teacher">Registration for the year 2017 has began \n All the information from last year has been saved and transferend to the HISTORY section and will be accessible at all time \n\n An e-mail containing instructions on how to registrer for the new year had been sent to each and every parent \n Just a reminder, Your kindergarten code is : %1$s \n\n Parents will receive a special message as well \n\n Good luck</string>
+    <string name="disconnect">Disconnect From Class</string>
+    <string name="disconnect_text">Are you sure you want to disconnect?</string>
+    <string name="more">more</string>
+    <string name="remove_user">Remove User</string>
+    <string name="change_class">Change Class</string>
+    <string name="choose_kid_class">Choose class to %1$s </string>
+    <string name="disconnect_text_teacher">Are you sure you want to disconnect the kid from the class?</string>
+    <string name="downloading_file_please_wait">Downloading file. Please wait...</string>
+    <string name="delete_opt">Delete Album</string>
+    <string name="delete_album_text">Are you sure you want to delete this album?</string>
+
+    <string name="end_year_text_parent">Registration for the year 2017 has began \n\n All The information from last year has been saved and transferend to the HISTORY section and will be accessible at all time \n\n You can choose between leaving your kid\'s profile connected to the old kindergarten, or connect it to a new one, by entering the a new kindergarten code and await approval \n\n Good luck</string>
+    <string name="end_year">2016 ended</string>
+
+
+    <string name="total_count">total</string>
+    <string name="edit_techer_details">Teacher\'s Details</string>
+    <string name="i_am_hint">I am:</string>
+    <string name="thanks">Thanks</string>
+    <string name="assign_pta">Assign PTA</string>
+    <string name="message_from_pta">message from PTA:</string>
+    <string name="PTA">PTA</string>
+    <string name="no_pta_defined">No PTA defined</string>
+    <string name="edit_comment">Edit Comment</string>
+    <string name="pta_explain">PTA can send messages</string>
+    <string name="type_comment">Write a comment</string>
+    <string name="comments">Comments</string>
+    <string name="contacts">Contacts</string>
+    <string name="parent">parent</string>
+    <string name="of">\'s</string>
+    <string name="mother">mother</string>
+    <string name="father">father</string>
+    <string name="delete_comment">Delete Comment</string>
+    <string name="empty_comments_list">No comments yet!</string>
+
+    <string name="delete_comment_pop_text">Are you sure you want to delete the comment?</string>
+    <string name="download_all_album">Are you sure you want to download all images to the device?</string>
+
+    <string name="favorites">Favorites</string>
+    <string name="saved_to_favorites">Saved to favorites</string>
+    <string name="removed_from_favorites">Removed from favorites</string>
+
+    <string name="favorites_empty1">Favorites is empty, click the</string>
+    <string name="favorites_empty2">to save photo or video to favorites.</string>
+
+    <string name="birthday">Birthday</string>
+
+    <string name="to">to</string>
+    <string name="delete_event">Delete Event</string>
+    <string name="day_off">Day Off</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="kids_participate">Kids:</string>
+    <string name="remarks">Comments:</string>
+    <string name="all_kids">all kids</string>
+    <string name="no_comments">No comments</string>
+    <string name="likes">likes</string>
+    <string name="select_type">Select a type</string>
+    <string name="all_day">All Day</string>
+
+    <string name="prepare_video_upload">Preparing video for upload</string>
+    <string name="add_event">Add Event</string>
+
+    <string name="kabbalat_shabbat">Kabbalat Shabbat</string>
+    <string name="vacation">Holiday</string>
+    <string name="trip">Trip</string>
+    <string name="other">Other</string>
+
+    <string name="select_kids_title">Everyone who marked will recieve a reminder before the event</string>
+
+    <string name="select_one_kid">Please select at least one kid</string>
+    <string name="event_data_incomplete">Please fill all event fields</string>
+    <string name="All">All</string>
+    <string name="Day">Day</string>
+    <string name="from">from</string>
+    <string name="until">to</string>
+    <string name="select_event_type">Please select event type first</string>
+    <string name="saving_event">The event was successfully saved</string>
+
+    <string name="edit_event">Edit Event</string>
+    <string name="event_title">Event Title</string>
+    <string name="new_feature_text">We just add a new Class Calendar.\n
+The calendar automatically adds all the children’s birthdays.\n
+The teacher can add in-class activities and outdoor excursions,
+as well as relevant meetings and school events.\n\n
+
+Parents can see all the activities relevant to their child’s
+class and school. \n\n
+
+New Updates are coming soon :)\n
+
+Apparent team.</string>
+    <string name="new_updates">New Updates</string>
+
+    <string name="delete_event_text">Are you sure you want to delete this event?</string>
+    <string name="cancel_changes">Discard Changes?</string>
+    <string name="cancel_changes_explanation">If you go back now,your draft will be discarded.</string>
+    <string name="continue_">KEEP</string>
+    <string name="no_data">No data available</string>
+    <string name="error_loading_pictures">Error while loading pictures</string>
+    <string name="deleting_pictures">Deleting pictures. . .</string>
+    <string name="error_deleting_pictures">Error while deleting pictures</string>
+    <string name="uploaded">uploaded</string>
+    <string name="of_hint">of</string>
+    <string name="pictures">pictures</string>
+
+    <string name="send_photo">Send photo</string>
+    <string name="delete_pic">delete pic</string>
+    <string name="loading_pictures">Loading your pictures...</string>
+    <string name="not_selected_pictures">Pictures not selected</string>
+    <string name="school_name">School name</string>
+
+    <string name="error_update_class">Error while update class</string>
+    <string name="error_set_class">Error while set class</string>
+    <string name="delete">Delete</string>
+    <string name="error_send_message">Error while send message</string>
+    <string name="error_get_kids">Error while loading kids</string>
+    <string name="error_load_messages">Error while load messages</string>
+    <string name="error_delete_album">Error while delete album</string>
+    <string name="error_rename_album">Error while rename album</string>
+    <string name="error_activate_kid">Error while activate kid</string>
+    <string name="error_load_comments">Error while load comments</string>
+    <string name="error_while_add_comment">Error while add new comment</string>
+    <string name="error_delete_comment">Error while delete comment</string>
+    <string name="error_update_comment">Error while update comment</string>
+    <string name="error_read_message">Error while read message</string>
+    <string name="error_update_password">Error while update password</string>
+    <string name="error_create_kid">Error while create kid</string>
+    <string name="error_load_pic">Error while load pic</string>
+    <string name="photo_not_found">Photo not found</string>
+    <string name="connection_error">Connection error</string>
+    <string name="check_video">Failed video processing, check if the file is not corrupted and try again.</string>
+    <string name="sorry" translatable="false">Sorry</string>
+    <string name="batch_uploading">Please wait until the upload process is done.</string>
+    <string name="album">Album</string>
+
+    <string name="add_location_text">Mark location for class </string>
+    <string name="pickup_drop_hours_text">Pick up / Drop off</string>
+    <string name="title_activity_pick_drop">PickDropActivity</string>
+    <string name="kid_drop_text">Kid drop off hours</string>
+    <string name="kid_pickup_text">Kid pick up hours</string>
+    <string name="notifications">notifications</string>
+    <string name="select_parents">Parents notifications</string>
+    <string name="select_parents_info">Choose parents to receive notifications on pickup/dropoff</string>
+    <string name="pickup_drop_hours_error">Please, enter valid hours.</string>
+    <string name="drop_off_warning">Did you drop off your kid today?</string>
+    <string name="pick_up_warning">Did you pick up your kid today?</string>
+    <string name="drop_off_gps_warning">We have noticed you are near your kindergarten, did you drop off your kid?</string>
+    <string name="pick_up_gps_warning">We have noticed you are near your kindergarten, did you pick up your kid?</string>
+    <string name="warning">Warning</string>
+    <string name="location_saved">GPS Location has been saved.</string>
+
+    <string name="from2">from</string>
+    <string name="to2">to</string>
+
+    <!-- FOR TUTORIAL -->
+    <string name="sign_in_tap">Tap to sign in</string>
+    <string name="register_tap">Tap to register</string>
+    <string name="add_album_tap">Tap to add album</string>
+    <string name="albums_tap">Go to albums</string>
+    <string name="comments_tap">Go to comments</string>
+    <string name="contacts_tap">Go to contacts</string>
+    <string name="events_tap">Go to events</string>
+    <string name="institution_logo_tap">Tap to upload institution logo</string>
+    <string name="register_tap_title">Register</string>
+    <string name="sign_in_tap_title">Login</string>
+    <string name="albums_tap_title">Albums</string>
+    <string name="comments_tap_title">Comments</string>
+    <string name="contacts_tap_title">Contacts</string>
+    <string name="events_tap_title">Events</string>
+    <string name="add_album_tap_title">Add album</string>
+    <string name="institution_logo_tap_title">Institution logo</string>
+    <string name="album_description_hint">Album description</string>
+    <string name="update_description_btn">Update description</string>
+    <string name="description_updated_successfully">Description updated successfully</string>
+    <string name="select_album_thumb">Select album thumbnail</string>
+    <string name="sutff_string">Stuff</string>
+    <string name="staff_string">Staff</string>
+    <string name="add_staff_btn">+ ADD STAFF</string>
+    <string name="add_staff">Add Staff</string>
+    <string name="staff_details_header">Staff details</string>
+    <string name="empty_string"></string>
+    <string name="thumb_updated">Thumbnail updated successfully</string>
+    <string name="attendenceText">Attendance page</string>
+    <string name="choose_picture_alert">Choose picture!</string>
+    <string name="add_thumb_alert">If you want to choose thumbnail, upload at least one picture!</string>
+    <string name="who_viewed_album">Who viewed album - </string>
+    <string name="album_no_viewers">No album viewers</string>
+    <string name="edit_staff_header">Edit Staff</string>
+    <string name="edit_staff_details">Staff Details</string>
+    <string name="drawing_album_succeed">Succeed!</string>
+    <string name="drawing_album_created">Drawing album created successfully!</string>
+    <string name="drawing_album_error">Error!</string>
+    <string name="drawing_album_server_error">Server error!</string>
+    <string name="drawing_album_for_kid">Here you can keep your kid\'s drawings! Do you want to create album?</string>
+    <string name="drawing_album_warning">Warning!</string>
+    <string name="drawing_album_name_warning">Please enter album name!</string>
+    <string name="drawing_upload_succeed">Drawing uploaded successfully</string>
+    <string name="drawing_upload_title_description">Please add title or description!</string>
+    <string name="drawing_choose_take_warning">Please choose or take a picture!</string>
+    <string name="drawings_text">Drawings</string>
+    <string name="drawing_album_name_placeholder">Album name</string>
+    <string name="drawing_add_story_text">Add drawing story</string>
+    <string name="drawing_title_description_placeholder">Add title or description...</string>
+    <string name="image_upload_alert_title">Upload image</string>
+    <string name="sidebar_invite_text">Invite</string>
+    <string name="keyboard_close_text">Close</string>
+    <string name="tutorial_page_1_title">Welcome to Ganbook!</string>
+    <string name="tutorial_page_1_title_apparent">Welcome to Apparent!</string>
+    <string name="tutorial_page_1_content">Here you can find a lot of interesting things for your kids. Are you excited? Please move one!</string>
+    <string name="tutorial_page_1_content_apparent">Here you can find a lot of interesting things for your kids. Are you excited? Please move one!</string>
+    <string name="tutorial_page_2_title">Create account</string>
+    <string name="tutorial_page_2_content">Here we are again... Nice to meet you. If you are teacher, parent, or even staff, don\'t hestiate, create an account!</string>
+    <string name="tutorial_page_2_content_apparent">Here we are again... Nice to meet you. If you are teacher, parent, or even staff, don\'t hestiate, create an account!</string>
+    <string name="tutorial_page_3_title">Albums</string>
+    <string name="tutorial_page_3_content">Create easy to use albums and instantly upload photos and videos from your classroom, outdoor outings or from anywhere you wish. Share images of your children\'s artwork with their parents. Parents have all their children\'s school photos and videos in easy to use and easy to access albums.</string>
+    <string name="tutorial_page_4_title">Drawings</string>
+    <string name="tutorial_page_4_content">As a parent you can add drawings, drawn by your child, to your created drawings album. More excited, right? Move on!</string>
+    <string name="tutorial_page_4_content_apparent">As a parent you can add drawings, drawn by your child, to your created drawings album. More excited, right? Move on!</string>
+    <string name="tutorial_page_5_title">Messages</string>
+    <string name="tutorial_page_5_content">Send messages to all the parents of the children in your class. These are not conversations, just simple teacher to parent messages. So useful in case of emergency or the unexpected... With emoticons, of course :)</string>
+    <string name="tutorial_page_5_content_apparent">Send messages to all the parents of the children in your class. These are not conversations, just simple teacher to parent messages. So useful in case of emergency or the unexpected... With emoticons, of course :)</string>
+    <string name="tutorial_page_6_title">Contact list</string>
+    <string name="tutorial_page_6_content">All the contact details of the parents of the children in your class in one easy to access and easy to use list. Contact parents directly from the Contact List via phone, sms or email. Class parents have simple access to all the contact details of their fellow class parents too.</string>
+    <string name="tutorial_page_6_content_apparent">All the contact details of the parents of the children in your class in one easy to access and easy to use list. Contact parents directly from the Contact List via phone, sms or email. Class parents have simple access to all the contact details of their fellow class parents too.</string>
+    <string name="tutorial_page_7_title">Events</string>
+    <string name="tutorial_page_7_content">The Ganbook Class Calendar is so cool. The calendar automatically adds all the children\'s birthdays, and the teacher can add in-class activities and outdoor excursions, as well as relevant meetings and school events. At a glance, parents can see all the activities relevant to their child\'s class and school.</string>
+    <string name="tutorial_page_7_content_apparent">The Apparent Class Calendar is so cool. The calendar automatically adds all the children\'s birthdays, and the teacher can add in-class activities and outdoor excursions, as well as relevant meetings and school events. At a glance, parents can see all the activities relevant to their child\'s class and school.</string>
+    <string name="tutorial_finish_btn">Finish</string>
+    <string name="institution_logo_error_text">Error while uploading institution logo!</string>
+    <string name="student">Student</string>
+    <string name="drawing_audio_empty">There is no audio recorded for this picture!</string>
+    <string name="add_student_text">Add Student</string>
+    <string name="enter_student_name">Enter student name</string>
+    <string name="student_details_text">Student details</string>
+    <string name="edit_student_text">Edit Student</string>
+    <string name="student_list_text">Student list</string>
+    <string name="student_info_text">Student info</string>
+    <string name="upload_file_text">Upload file</string>
+    <string name="paste_url_text">Paste url here</string>
+    <string name="send_text">Send</string>
+    <string name="send_attachment_text">Send attachments</string>
+    <string name="document_title_string">Files</string>
+    <string name="upload_documents_string">Upload documents</string>
+    <string name="title_string">Title</string>
+    <string name="please_provide_information_string">Please provide information you would like to share with parents</string>
+    <string name="attach_document_string">Attach document</string>
+    <string name="no_documents_string">No documents for this class!</string>
+    <string name="required_string">Required</string>
+    <string name="all_fields_required">All fields are required!</string>
+    <string name="please_attach_document_string">Please attach document!</string>
+    <string name="attachments_string">Attachments</string>
+    <string name="delete_document_string">Delete document</string>
+    <string name="are_you_sure_string">Are you sure you want to delete this document?</string>
+    <string name="max_file_size_20mb">Maximum file size is 20 MB</string>
+    <string name="record_audio_string">Record audio</string>
+    <string name="press_for_record_string">Press for record</string>
+    <string name="document_attached_string">Document attached</string>
+    <string name="allow_camera_text">Allow camera</string>
+    <string name="photo_description_text">Photo description</string>
+    <string name="dialog_close_text">Close</string>
+    <string name="fifteen_mins_block_text">You are blocked for 15 minutes!</string>
+
+    <string-array name="duration_array">
+        <item>10 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+    </string-array>
+    <string name="meeting_available_text">Available</string>
+    <string name="meeting_unavailable_text">Unavailable</string>
+    <string name="meeting_hours_title">Meeting hours</string>
+    <string name="add_meeting_title">Add meeting</string>
+    <string name="meetings_text">Meetings</string>
+    <string name="time_slot_duration_text">Time slot duration</string>
+    <string name="attendees_list_title">Attendees List</string>
+    <string name="meeting_title_text">Title</string>
+    <string name="meeting_select_start_date_text">Select start date</string>
+    <string name="meeting_select_end_date">Select end date</string>
+    <string name="meeting_enter_comment_text">Enter comment here</string>
+    <string name="meeting_start_text">Start</string>
+    <string name="meeting_end_text">End</string>
+    <string name="end_time_error_text">End time cannot be before start time!</string>
+    <string name="events_text">Meetings</string>
+    <string name="delete_meeting_text">Delete meeting</string>
+    <string name="delete_meeting_message_text">Are you sure you want to delete this meeting?</string>
+    <string name="no_meetings_text">No meetings for this class</string>
+    <string name="meeting_push_text">Dear parents, assign to meetings</string>
+</resources>

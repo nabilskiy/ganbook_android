@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.project.ganim.ganBook-mergeGanbookDebugResources-62:/values-xhdpi-v4/values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "D:\\sasha\\ganbook_full\\ganbook darko\\ganBook\\src\\main\\res\\values-xhdpi\\dimens.xml",
+                    "from": {
+                        "startLines": "10,9,11,8,4,3,13,12,7",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "362,306,421,259,100,56,513,469,218",
+                        "endColumns": "57,55,47,46,44,43,46,43,40",
+                        "endOffsets": "415,357,464,301,140,95,555,508,254"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,169,217,264,309,353,400,444",
+                        "endColumns": "57,55,47,46,44,43,46,43,40",
+                        "endOffsets": "108,164,212,259,304,348,395,439,480"
+                    }
+                }
+            ]
+        }
+    ]
+}

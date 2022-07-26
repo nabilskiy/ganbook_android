@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F7F7F7"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.ganbook.activities.MeetingEventActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/app_bar">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/meetingTitleCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleRelativeLayout">
+            <TextView
+                android:id="@+id/meetingTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:text="@string/meeting_title_text"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/meetingTitleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/meetingTitleTextView"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/cardDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/titleRelativeLayout"
+                android:background="@android:color/darker_gray"/>
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/meetingStartEndDateCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meetingTitleCard"
+            android:layout_marginTop="10dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/meetingDateTimeRelativeLayout">
+                    <TextView
+                        android:id="@+id/meetingStartDateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:enabled="false"
+                        android:text="@string/meeting_start_text"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:id="@+id/meetingStartDateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:hint="@string/meeting_select_start_date_text"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/meetingStartDateText"/>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/cardDivider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/meetingDateTimeRelativeLayout"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardDivider2">
+                    <TextView
+                        android:id="@+id/meetingEndDateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:text="@string/meeting_end_text"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:id="@+id/meetingEndDateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:hint="@string/meeting_select_end_date"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/meetingEndDateText"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/maxSignUpsTimeSlotCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meetingStartEndDateCard"
+            android:layout_marginTop="10dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/meetingTimeSlotDurationLayout">
+                    <TextView
+                        android:id="@+id/meetingTimeSlotDurationText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:enabled="false"
+                        android:text="@string/time_slot_duration_text"
+                        android:textSize="20sp"/>
+
+                    <Spinner
+                        android:id="@+id/meetingTimeSlotDurationSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:textSize="20sp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/meetingTimeSlotDurationText"/>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/cardDivider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/meetingTimeSlotDurationLayout"
+                    android:background="@android:color/darker_gray"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/maxSignUpsTimeSlotCard"
+            android:layout_marginTop="10dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+                <EditText
+                    android:id="@+id/meetingCommentEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:hint="@string/meeting_enter_comment_text"
+                    android:gravity="top|left"
+                    android:lines="2"
+                    android:maxLength="50"
+                    android:inputType="textMultiLine" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

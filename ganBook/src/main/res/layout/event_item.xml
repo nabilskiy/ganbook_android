@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <RelativeLayout
+        android:id="@+id/hour_layout"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        >
+        <TextView
+            android:id="@+id/start_hour_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/seperator"
+            android:text="11:45"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/seperator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+            android:id="@+id/end_hour_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seperator"
+            android:text="11:45"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"/>
+
+
+     </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/blue_seperator"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_toRightOf="@+id/hour_layout"
+        />
+
+    <RelativeLayout
+        android:id="@+id/event_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/blue_seperator"
+        android:layout_marginLeft="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/event_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/birthday"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/event_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/event_iv"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#6d6d6d"
+            android:maxLines="1"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clickable="true"
+    tools:context="com.ganbook.fragments.PreviewSelectedPicturesFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/previews_recycler"
+        android:layout_margin="5dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/previews_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_pic_size"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/send_btn"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle_shape_solid"
+        android:layout_above="@+id/previews_recycler"
+        android:src="@drawable/send"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

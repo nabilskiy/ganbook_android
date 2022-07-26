@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/save_menu"
+        android:title="@string/save_btn"
+        android:enabled="true"
+        android:actionLayout="@layout/save_layout"
+        app:showAsAction="always"
+        app:actionLayout="@layout/save_layout"/>
+
+</menu>

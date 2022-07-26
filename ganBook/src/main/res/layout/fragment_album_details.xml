@@ -1,0 +1,187 @@
+<layout xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="album"
+            type="com.ganbook.models.AlbumsAnswer" />
+
+        <variable
+            name="isParent"
+            type="boolean" />
+        <variable
+            name="isStaff"
+            type="boolean" />
+
+        <variable
+            name="handlers"
+            type="com.ganbook.handlers.AlbumDetailsHandlers" />
+
+        <variable
+            name="showDelete"
+            type="boolean" />
+
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/apparent_white"
+        android:clickable="true"
+        android:id="@+id/androidAlbumsFragment"
+        tools:context="com.ganbook.fragments.AlbumDrawingsDetailsFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/images_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_bar" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:id="@+id/album_detail_progressbar"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_bar">
+
+            <LinearLayout
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:background="#DCDCDC"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/user_action_button"
+                android:visibility="visible"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+               <!-- android:onClick="@{isParent ? handlers.onDownloadImagesClick : handlers.onCameraClick}"
+                android:src="@{isParent ? @drawable/download : @drawable/lower_panel_camara}"-->
+
+            <ImageView
+                android:id="@+id/try_again_btn"
+                android:onClick="@{handlers::onTryAgainClick}"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone"
+                android:src="@drawable/restart"/>
+
+            <ImageView
+                android:id="@+id/delete_btn"
+                android:visibility="@{showDelete ? 0 : 8}"
+                android:onClick="@{handlers::onDeleteImagesClick}"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/lower_panel_delete"/>
+
+            <ImageView
+                android:id="@+id/set_thumb_button"
+                android:layout_width="50dp"
+                android:visibility="gone"
+                android:layout_height="50dp"
+                android:layout_marginLeft="6dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/add_thumb"/>
+            <ImageView
+                android:id="@+id/add_thumb"
+                android:layout_width="40dp"
+                android:visibility="visible"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/thumbnail_add"/>
+
+
+            <LinearLayout
+                android:id="@+id/comments_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/num_comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@{String.valueOf(album.commentsCount)}"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:textColor="#DCDCDC" />
+
+                <ImageView
+                    android:id="@+id/comments_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/num_comments"
+                    android:onClick="@{handlers::openCommentsClick}"
+                    android:src="@drawable/chat"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/likes_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/comments_layout"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/num_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:gravity="center"
+                    android:text="@{String.valueOf(album.likesCount)}"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:textColor="#DCDCDC" />
+
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp">
+
+                    <include
+                        layout="@layout/like_layout"
+                        android:layout_width="match_parent"
+                        bind:album="@{album}"
+                        bind:handlers="@{handlers}" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

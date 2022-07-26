@@ -1,0 +1,88 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:clickable="true"
+    tools:context="com.ganbook.fragments.PictureDetailsFragment">
+
+    <com.ganbook.ui.zoomable.ExtendedViewPager
+        android:id="@+id/drawing_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/drawing_details_header"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/single_image_header_menu">
+
+        <ImageView
+            android:id="@+id/drawingBackButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow_back"
+            android:tint="@color/white"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/drawing_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/drawing_details_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#99000000">
+
+        <TextView
+            android:id="@+id/drawingDesicrpitonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/save_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="0dp"
+            />
+        <Button
+            android:id="@+id/playBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_play"
+            android:layout_centerVertical="true"
+            />
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_stop"
+            android:layout_toRightOf="@id/playBtn"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

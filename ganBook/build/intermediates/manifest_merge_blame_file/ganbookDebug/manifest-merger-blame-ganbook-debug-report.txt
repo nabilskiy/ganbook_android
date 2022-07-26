@@ -1,0 +1,1022 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.project.ganim"
+4    android:versionCode="580"
+5    android:versionName="77" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:7:5-80
+11-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:7:22-77
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:8:5-67
+12-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:8:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:9:5-79
+13-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:9:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:10:5-76
+14-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:10:22-73
+15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:11:5-75
+15-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:11:22-72
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:12:5-81
+16-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:12:22-78
+17    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+17-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:13:5-88
+17-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:13:22-85
+18    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+18-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:14:5-79
+18-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:14:22-76
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:15:5-66
+19-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:15:22-63
+20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+20-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:16:5-82
+20-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:16:22-79
+21    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+21-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:17:5-81
+21-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:17:22-78
+22    <uses-permission android:name="android.permission.WAKE_LOCK" />
+22-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:18:5-68
+22-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:18:22-65
+23
+24    <permission
+25        android:name="com.project.ganim.permission.C2D_MESSAGE"
+25-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:21:9-63
+26        android:protectionLevel="signature" />
+26-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:22:9-44
+27
+28    <uses-permission android:name="com.project.ganim.permission.C2D_MESSAGE" />
+28-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:24:22-76
+29    <uses-permission android:name="android.permission.CAMERA" />
+29-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:25:5-65
+29-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:25:22-62
+30
+31    <uses-feature android:name="android.hardware.camera" />
+31-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:27:5-60
+31-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:27:19-57
+32    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- BEGIN for Bagde lib -->
+32-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:28:5-70
+32-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:28:19-67
+33    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+33-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:29:5-85
+33-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:29:22-82
+34    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" /> <!-- for Samsung -->
+34-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:30:5-86
+34-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:30:22-83
+35    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+35-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:31:5-86
+35-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:31:22-83
+36    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+36-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:32:5-87
+36-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:32:22-84
+37    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+37-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:33:5-81
+37-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:33:22-78
+38    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+38-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:34:5-83
+38-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:34:22-80
+39    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" /> <!-- for apex -->
+39-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:35:5-88
+39-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:35:22-85
+40    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+40-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:36:5-84
+40-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:36:22-81
+41    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+41-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:26:5-77
+41-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:26:22-74
+42    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+42-->[com.google.android.gms:play-services-measurement-api:21.0.0] C:\Users\user\.gradle\caches\transforms-3\333966f5c3f3736228ff85e4a6467e63\transformed\jetified-play-services-measurement-api-21.0.0\AndroidManifest.xml:25:5-79
+42-->[com.google.android.gms:play-services-measurement-api:21.0.0] C:\Users\user\.gradle\caches\transforms-3\333966f5c3f3736228ff85e4a6467e63\transformed\jetified-play-services-measurement-api-21.0.0\AndroidManifest.xml:25:22-76
+43    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+43-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:26:5-110
+43-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:26:22-107
+44
+45    <permission
+45-->[androidx.core:core:1.9.0-alpha05] C:\Users\user\.gradle\caches\transforms-3\f705e06d29ff2e566611ddc130b8c89d\transformed\core-1.9.0-alpha05\AndroidManifest.xml:23:5-25:47
+46        android:name="com.project.ganim.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.9.0-alpha05] C:\Users\user\.gradle\caches\transforms-3\f705e06d29ff2e566611ddc130b8c89d\transformed\core-1.9.0-alpha05\AndroidManifest.xml:24:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.9.0-alpha05] C:\Users\user\.gradle\caches\transforms-3\f705e06d29ff2e566611ddc130b8c89d\transformed\core-1.9.0-alpha05\AndroidManifest.xml:25:9-44
+48
+49    <uses-permission android:name="com.project.ganim.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.9.0-alpha05] C:\Users\user\.gradle\caches\transforms-3\f705e06d29ff2e566611ddc130b8c89d\transformed\core-1.9.0-alpha05\AndroidManifest.xml:27:5-97
+49-->[androidx.core:core:1.9.0-alpha05] C:\Users\user\.gradle\caches\transforms-3\f705e06d29ff2e566611ddc130b8c89d\transformed\core-1.9.0-alpha05\AndroidManifest.xml:27:22-94
+50    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+50-->[com.kailashdabhi:om-recorder:1.1.5] C:\Users\user\.gradle\caches\transforms-3\6752b81b0cdc4e41c749e8b9d11ee521\transformed\jetified-om-recorder-1.1.5\AndroidManifest.xml:9:5-71
+50-->[com.kailashdabhi:om-recorder:1.1.5] C:\Users\user\.gradle\caches\transforms-3\6752b81b0cdc4e41c749e8b9d11ee521\transformed\jetified-om-recorder-1.1.5\AndroidManifest.xml:9:22-68
+51
+52    <application
+52-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:38:5-388:19
+53        android:name="com.ganbook.app.MyApp"
+53-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:39:9-45
+54        android:allowBackup="true"
+54-->[com.github.mjn1369:prettydialog:1.0.4] C:\Users\user\.gradle\caches\transforms-3\0088aaecf67d6f015b41e639ea26528c\transformed\jetified-prettydialog-1.0.4\AndroidManifest.xml:11:18-44
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.9.0-alpha05] C:\Users\user\.gradle\caches\transforms-3\f705e06d29ff2e566611ddc130b8c89d\transformed\core-1.9.0-alpha05\AndroidManifest.xml:29:18-86
+56        android:debuggable="true"
+57        android:extractNativeLibs="true"
+57-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:47:9-41
+58        android:icon="@drawable/ic_launcher"
+58-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:40:9-45
+59        android:label="@string/app_name"
+59-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:41:9-41
+60        android:largeHeap="true"
+60-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:42:9-33
+61        android:requestLegacyExternalStorage="true"
+61-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:45:9-52
+62        android:supportsRtl="true"
+62-->[com.irozon.sneaker:sneaker:1.0.3] C:\Users\user\.gradle\caches\transforms-3\a9fccec998668bf37232780a1f30d1ba\transformed\jetified-sneaker-1.0.3\AndroidManifest.xml:14:9-35
+63        android:testOnly="true"
+64        android:theme="@style/AppTheme"
+64-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:43:9-40
+65        android:usesCleartextTraffic="true" >
+65-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:44:9-44
+66        <activity android:name="com.ganbook.activities.MeetingEventListActivity" />
+66-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:49:9-84
+66-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:49:19-81
+67        <activity android:name="com.ganbook.activities.MeetingAttendees" />
+67-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:50:9-76
+67-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:50:19-73
+68
+69        <uses-library
+69-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:52:9-54:40
+70            android:name="org.apache.http.legacy"
+70-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:53:13-50
+71            android:required="false" />
+71-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:54:13-37
+72
+73        <activity
+73-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:56:9-62:63
+74            android:name="com.ganbook.activities.EntryScreenActivity"
+74-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:57:13-70
+75            android:label="@string/app_name"
+75-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:58:13-45
+76            android:noHistory="false"
+76-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:59:13-38
+77            android:screenOrientation="portrait"
+77-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:60:13-49
+78            android:theme="@style/Theme.AppCompat.NoActionBar"
+78-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:61:13-63
+79            android:windowSoftInputMode="stateAlwaysHidden" />
+79-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:62:13-60
+80        <activity android:name="com.ganbook.activities.CustomAdsActivity" />
+80-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:63:9-77
+80-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:63:19-74
+81        <activity
+81-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:65:9-89:20
+82            android:name="com.ganbook.activities.SplashActivity"
+82-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:66:13-65
+83            android:exported="true"
+83-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:68:13-36
+84            android:label="@string/app_name"
+84-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:67:13-45
+85            android:launchMode="standard"
+85-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:69:13-42
+86            android:noHistory="true"
+86-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:70:13-37
+87            android:screenOrientation="portrait"
+87-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:71:13-49
+88            android:theme="@style/Theme.AppCompat.NoActionBar" >
+88-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:72:13-63
+89            <intent-filter>
+89-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:73:13-77:29
+90                <action android:name="android.intent.action.MAIN" />
+90-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:74:17-69
+90-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:74:25-66
+91
+92                <category android:name="android.intent.category.LAUNCHER" />
+92-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:76:17-77
+92-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:76:27-74
+93            </intent-filter>
+94            <intent-filter>
+94-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:78:13-88:29
+95                <action android:name="android.intent.action.VIEW" />
+95-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:79:17-69
+95-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:79:25-66
+96
+97                <category android:name="android.intent.category.DEFAULT" />
+97-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:81:17-76
+97-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:81:27-73
+98                <category android:name="android.intent.category.BROWSABLE" />
+98-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:82:17-78
+98-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:82:27-75
+99
+100                <data
+100-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:84:17-87:46
+101                    android:host="web.ganbook.co.il"
+101-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:85:21-53
+102                    android:pathPrefix="/url"
+102-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:86:21-46
+103                    android:scheme="https" />
+103-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:87:21-43
+104            </intent-filter>
+105        </activity>
+106        <activity
+106-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:90:9-94:67
+107            android:name="com.ganbook.activities.MainActivity"
+107-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:91:13-63
+108            android:configChanges="orientation|screenSize"
+108-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:92:13-59
+109            android:label="@string/app_name"
+109-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:93:13-45
+110            android:windowSoftInputMode="stateHidden|adjustPan" />
+110-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:94:13-64
+111        <activity
+111-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:95:9-100:67
+112            android:name="com.ganbook.activities.NewYearActivity"
+112-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:96:13-66
+113            android:label="@string/app_name"
+113-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:97:13-45
+114            android:screenOrientation="portrait"
+114-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:98:13-49
+115            android:theme="@style/Theme.AppCompat.NoActionBar"
+115-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:99:13-63
+116            android:windowSoftInputMode="stateHidden|adjustPan" />
+116-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:100:13-64
+117        <activity
+117-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:101:9-105:67
+118            android:name="com.ganbook.activities.NewYearEndScreenActivity"
+118-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:102:13-75
+119            android:label="@string/app_name"
+119-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:103:13-45
+120            android:screenOrientation="portrait"
+120-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:104:13-49
+121            android:windowSoftInputMode="stateHidden|adjustPan" />
+121-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:105:13-64
+122        <activity
+122-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:106:9-114:20
+123            android:name="com.ganbook.activities.CommentsActivity"
+123-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:107:13-67
+124            android:label="@string/app_name"
+124-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:108:13-45
+125            android:screenOrientation="portrait"
+125-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:109:13-49
+126            android:windowSoftInputMode="stateHidden|adjustPan" >
+126-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:110:13-64
+127            <meta-data
+127-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:111:13-113:71
+128                android:name="android.support.PARENT_ACTIVITY"
+128-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:112:17-63
+129                android:value="com.ganbook.activities.MainActivity" />
+129-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:113:17-68
+130        </activity>
+131        <activity
+131-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:115:9-121:67
+132            android:name="com.ganbook.activities.TrimActivity"
+132-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:116:13-63
+133            android:hardwareAccelerated="false"
+133-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:117:13-48
+134            android:label="@string/app_name"
+134-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:118:13-45
+135            android:screenOrientation="portrait"
+135-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:119:13-49
+136            android:theme="@style/Theme.AppCompat.NoActionBar"
+136-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:120:13-63
+137            android:windowSoftInputMode="stateHidden|adjustPan" />
+137-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:121:13-64
+138        <activity
+138-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:122:9-126:67
+139            android:name="com.ganbook.activities.FavoriteActivity"
+139-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:123:13-67
+140            android:label="@string/app_name"
+140-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:124:13-45
+141            android:screenOrientation="portrait"
+141-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:125:13-49
+142            android:windowSoftInputMode="stateHidden|adjustPan" />
+142-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:126:13-64
+143        <activity
+143-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:127:9-131:70
+144            android:name="com.ganbook.activities.EditCommentActivity"
+144-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:128:13-70
+145            android:label="@string/app_name"
+145-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:129:13-45
+146            android:screenOrientation="portrait"
+146-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:130:13-49
+147            android:windowSoftInputMode="adjustResize|stateHidden" />
+147-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:131:13-67
+148        <activity
+148-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:132:9-136:67
+149            android:name="com.ganbook.activities.InviteParentsActivity"
+149-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:133:13-72
+150            android:label="@string/app_name"
+150-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:134:13-45
+151            android:screenOrientation="portrait"
+151-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:135:13-49
+152            android:windowSoftInputMode="stateHidden|adjustPan" />
+152-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:136:13-64
+153        <activity
+153-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:137:9-142:67
+154            android:name="com.ganbook.activities.LoginActivity"
+154-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:138:13-64
+155            android:label="@string/title_activity_login"
+155-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:139:13-57
+156            android:noHistory="false"
+156-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:140:13-38
+157            android:screenOrientation="portrait"
+157-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:141:13-49
+158            android:windowSoftInputMode="stateHidden|adjustPan" />
+158-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:142:13-64
+159        <activity
+159-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:143:9-147:67
+160            android:name="com.ganbook.activities.ParentDetailsActivity"
+160-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:144:13-72
+161            android:label="@string/title_activity_parent_details"
+161-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:145:13-66
+162            android:screenOrientation="portrait"
+162-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:146:13-49
+163            android:windowSoftInputMode="stateHidden|adjustPan" />
+163-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:147:13-64
+164        <activity
+164-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:148:9-152:67
+165            android:name="com.ganbook.activities.SelectPTAActivity"
+165-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:149:13-68
+166            android:label="@string/title_activity_parent_details"
+166-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:150:13-66
+167            android:screenOrientation="portrait"
+167-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:151:13-49
+168            android:windowSoftInputMode="stateHidden|adjustPan" />
+168-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:152:13-64
+169        <activity
+169-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:153:9-164:20
+170            android:name="com.ganbook.activities.SettingsActivity"
+170-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:154:13-67
+171            android:exported="false"
+171-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:155:13-37
+172            android:label="@string/title_activity_pta"
+172-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:156:13-55
+173            android:screenOrientation="portrait"
+173-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:157:13-49
+174            android:windowSoftInputMode="stateHidden|adjustPan" >
+174-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:158:13-64
+175            <intent-filter>
+175-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:159:13-163:29
+176                <action android:name="com.ganbook." />
+176-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:160:17-55
+176-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:160:25-52
+177
+178                <category android:name="android.intent.category.DEFAULT" />
+178-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:81:17-76
+178-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:81:27-73
+179            </intent-filter>
+180        </activity>
+181        <activity
+181-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:165:9-169:67
+182            android:name="com.ganbook.activities.AddKidActivity"
+182-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:166:13-65
+183            android:label="@string/title_activity_class_name"
+183-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:167:13-62
+184            android:screenOrientation="portrait"
+184-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:168:13-49
+185            android:windowSoftInputMode="stateHidden|adjustPan" />
+185-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:169:13-64
+186        <activity
+186-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:170:9-174:67
+187            android:name="com.ganbook.activities.AddClassActivity"
+187-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:171:13-67
+188            android:label="@string/title_activity_class_name"
+188-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:172:13-62
+189            android:screenOrientation="portrait"
+189-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:173:13-49
+190            android:windowSoftInputMode="stateHidden|adjustPan" />
+190-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:174:13-64
+191        <activity
+191-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:175:9-179:67
+192            android:name="com.ganbook.activities.ChooseClassActivity"
+192-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:176:13-70
+193            android:label="@string/title_activity_class_name"
+193-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:177:13-62
+194            android:screenOrientation="portrait"
+194-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:178:13-49
+195            android:windowSoftInputMode="stateHidden|adjustPan" />
+195-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:179:13-64
+196        <activity
+196-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:180:9-185:67
+197            android:name="com.ganbook.activities.EnterEmailActivity"
+197-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:181:13-69
+198            android:label="@string/title_activity_enter_email"
+198-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:182:13-63
+199            android:noHistory="false"
+199-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:183:13-38
+200            android:screenOrientation="portrait"
+200-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:184:13-49
+201            android:windowSoftInputMode="stateHidden|adjustPan" />
+201-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:185:13-64
+202        <activity
+202-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:186:9-191:67
+203            android:name="com.ganbook.activities.PtaActivity"
+203-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:187:13-62
+204            android:label="@string/title_activity_enter_email"
+204-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:188:13-63
+205            android:noHistory="false"
+205-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:189:13-38
+206            android:screenOrientation="portrait"
+206-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:190:13-49
+207            android:windowSoftInputMode="stateHidden|adjustPan" />
+207-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:191:13-64
+208        <activity
+208-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:192:9-195:41
+209            android:name="com.ganbook.activities.SignupActivity"
+209-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:193:13-65
+210            android:label="@string/title_activity_registration"
+210-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:194:13-64
+211            android:noHistory="false" />
+211-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:195:13-38
+212        <activity
+212-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:196:9-199:55
+213            android:name="com.ganbook.activities.AddAlbumActivity"
+213-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:197:13-67
+214            android:label="@string/title_activity_enter_code"
+214-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:198:13-62
+215            android:windowSoftInputMode="adjustPan" />
+215-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:199:13-52
+216        <activity
+216-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:200:9-203:55
+217            android:name="com.ganbook.activities.DescriptionActivity"
+217-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:201:13-70
+218            android:label="@string/title_activity_enter_code"
+218-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:202:13-62
+219            android:windowSoftInputMode="adjustPan" />
+219-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:203:13-52
+220        <activity
+220-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:204:9-206:65
+221            android:name="com.ganbook.activities.EnterCodeActivity"
+221-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:205:13-68
+222            android:label="@string/title_activity_enter_code" />
+222-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:206:13-62
+223        <activity
+223-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:207:9-209:66
+224            android:name="com.ganbook.activities.WebViewActivity"
+224-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:208:13-66
+225            android:theme="@style/Theme.AppCompat.NoActionBar" />
+225-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:209:13-63
+226        <activity
+226-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:210:9-212:64
+227            android:name="com.ganbook.activities.RegistrationSucceededActivity"
+227-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:211:13-80
+228            android:label="@string/title_activity_add_child" />
+228-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:212:13-61
+229        <activity
+229-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:213:9-215:59
+230            android:name="com.ganbook.activities.ZoomActivity"
+230-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:214:13-63
+231            android:label="@string/title_activity_zoom" />
+231-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:215:13-56
+232        <activity
+232-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:216:9-220:67
+233            android:name="com.ganbook.activities.UpdateTeacherDetailsActivity"
+233-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:217:13-79
+234            android:label="@string/title_activity_zoom"
+234-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:218:13-56
+235            android:screenOrientation="portrait"
+235-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:219:13-49
+236            android:windowSoftInputMode="stateHidden|adjustPan" />
+236-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:220:13-64
+237        <activity
+237-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:221:9-223:59
+238            android:name="com.ganbook.activities.KindergartenDetailsActivity"
+238-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:222:13-78
+239            android:label="@string/title_activity_zoom" />
+239-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:223:13-56
+240        <activity
+240-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:224:9-226:59
+241            android:name="com.ganbook.activities.ChangePasswordActivity"
+241-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:225:13-73
+242            android:label="@string/title_activity_zoom" />
+242-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:226:13-56
+243        <activity
+243-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:227:9-229:59
+244            android:name="com.ganbook.activities.EventActivity"
+244-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:228:13-64
+245            android:label="@string/title_activity_zoom" />
+245-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:229:13-56
+246        <activity
+246-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:230:9-232:59
+247            android:name="com.ganbook.activities.AddEventActivity"
+247-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:231:13-67
+248            android:label="@string/title_activity_zoom" />
+248-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:232:13-56
+249        <activity
+249-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:233:9-235:59
+250            android:name="com.ganbook.activities.SelectKidsActivity"
+250-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:234:13-69
+251            android:label="@string/title_activity_zoom" />
+251-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:235:13-56
+252        <activity
+252-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:236:9-239:58
+253            android:name="com.ganbook.activities.AddMessageActivity"
+253-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:237:13-69
+254            android:label="@string/title_activity_zoom"
+254-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:238:13-56
+255            android:windowSoftInputMode="adjustResize" />
+255-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:239:13-55
+256        <activity
+256-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:240:9-243:58
+257            android:name="com.ganbook.activities.AlbumViewersActivity"
+257-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:241:13-71
+258            android:label="AlbumViewers"
+258-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:242:13-41
+259            android:windowSoftInputMode="adjustResize" />
+259-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:243:13-55
+260        <activity
+260-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:244:9-247:55
+261            android:name="com.ganbook.activities.DrawingInformationAdding"
+261-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:245:13-75
+262            android:label="add drawing"
+262-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:246:13-40
+263            android:windowSoftInputMode="adjustPan" />
+263-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:247:13-52
+264        <activity
+264-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:248:9-250:43
+265            android:name="com.ganbook.activities.UserAttachmentsActivity"
+265-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:249:13-74
+266            android:label="Attachments" />
+266-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:250:13-40
+267        <activity
+267-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:251:9-260:20
+268            android:name="com.luminous.pick.CustomGalleryActivity"
+268-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:252:13-67
+269            android:exported="false" >
+269-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:253:13-37
+270            <intent-filter>
+270-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:254:13-259:29
+271                <action android:name="luminous.ACTION_PICK" />
+271-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:255:17-63
+271-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:255:25-60
+272                <action android:name="luminous.ACTION_MULTIPLE_PICK" />
+272-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:256:17-72
+272-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:256:25-69
+273
+274                <category android:name="android.intent.category.DEFAULT" />
+274-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:81:17-76
+274-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:81:27-73
+275            </intent-filter>
+276        </activity>
+277        <activity
+277-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:261:9-264:58
+278            android:name="com.ganbook.activities.TutorialActivity"
+278-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:262:13-67
+279            android:label="Tutorial"
+279-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:263:13-37
+280            android:windowSoftInputMode="adjustResize" />
+280-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:264:13-55
+281        <activity
+281-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:265:9-268:58
+282            android:name="com.ganbook.activities.StudentListActivity"
+282-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:266:13-70
+283            android:label="Student list"
+283-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:267:13-41
+284            android:windowSoftInputMode="adjustResize" />
+284-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:268:13-55
+285        <activity
+285-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:269:9-272:58
+286            android:name="com.ganbook.activities.SingleStudentInfo"
+286-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:270:13-68
+287            android:label="Student info"
+287-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:271:13-41
+288            android:windowSoftInputMode="adjustResize" />
+288-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:272:13-55
+289        <activity
+289-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:273:9-276:66
+290            android:name="com.ganbook.activities.AttachmentWebView"
+290-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:274:13-68
+291            android:hardwareAccelerated="true"
+291-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:275:13-47
+292            android:theme="@style/Theme.AppCompat.NoActionBar" />
+292-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:276:13-63
+293        <activity
+293-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:277:9-279:58
+294            android:name="com.ganbook.activities.UploadAttachmentActivity"
+294-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:278:13-75
+295            android:windowSoftInputMode="adjustResize" />
+295-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:279:13-55
+296
+297        <service android:name="com.ganbook.communication.upload.UploadService" />
+297-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:281:9-82
+297-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:281:18-79
+298
+299        <receiver
+299-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:283:9-289:20
+300            android:name="com.ganbook.connection.ConnectionStateListener"
+300-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:284:13-74
+301            android:exported="false" >
+301-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:285:13-37
+302            <intent-filter>
+302-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:286:13-288:29
+303                <action android:name="android.net.conn.JobScheduler" />
+303-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:287:17-72
+303-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:287:25-69
+304            </intent-filter>
+305        </receiver>
+306
+307        <meta-data
+307-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:291:9-293:72
+308            android:name="com.parse.APPLICATION_ID"
+308-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:292:13-52
+309            android:value="YVyJJy3WNvIHKl579qQMFm6dqNDZeRtyYLOxBHsa" />
+309-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:293:13-69
+310        <meta-data
+310-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:294:9-296:72
+311            android:name="com.parse.CLIENT_KEY"
+311-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:295:13-48
+312            android:value="rpiIDBC4JzX412Ai1ADy1FmNefaUOfIgIk5MnpQy" /> <!-- GCM setup -->
+312-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:296:13-69
+313        <meta-data
+313-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:297:9-299:47
+314            android:name="com.parse.push.gcm_sender_id"
+314-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:298:13-56
+315            android:value="id:213959356519" />
+315-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:299:13-44
+316
+317        <service
+317-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:301:9-307:19
+318            android:name="com.parse.fcm.ParseFirebaseInstanceIdService"
+318-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:302:13-72
+319            android:exported="false" >
+319-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:303:13-37
+320            <intent-filter>
+320-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:304:13-306:29
+321                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+321-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:305:17-80
+321-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:305:25-77
+322            </intent-filter>
+323        </service>
+324        <service
+324-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:308:9-314:19
+325            android:name="com.parse.fcm.ParseFirebaseMessagingService"
+325-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:309:13-71
+326            android:exported="false" >
+326-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:310:13-37
+327            <intent-filter>
+327-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:311:13-313:29
+328                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+328-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:312:17-78
+328-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:312:25-75
+329            </intent-filter>
+330        </service>
+331        <!--
+332        <receiver android:name="com.parse.ParsePushBroadcastReceiver" android:exported="false">
+333            <intent-filter>
+334                <action android:name="com.parse.push.intent.RECEIVE" />
+335                <action android:name="com.parse.push.intent.OPEN" />
+336                <action android:name="com.parse.push.intent.DELETE" />
+337            </intent-filter>
+338        </receiver>
+339        -->
+340        <receiver
+340-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:324:9-332:20
+341            android:name="com.ganbook.gcm.CustomeParsePushBroadcastReceiver"
+341-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:325:13-77
+342            android:exported="false" >
+342-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:326:13-37
+343            <intent-filter>
+343-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:327:13-331:29
+344                <action android:name="com.parse.push.intent.RECEIVE" />
+344-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:328:17-72
+344-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:328:25-69
+345                <action android:name="com.parse.push.intent.DELETE" />
+345-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:329:17-71
+345-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:329:25-68
+346                <action android:name="com.parse.push.intent.OPEN" />
+346-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:330:17-69
+346-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:330:25-66
+347            </intent-filter>
+348        </receiver>
+349
+350        <meta-data
+350-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:334:9-336:69
+351            android:name="com.google.android.gms.version"
+351-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:335:13-58
+352            android:value="@integer/google_play_services_version" />
+352-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:336:13-66
+353        <meta-data
+353-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:337:9-339:72
+354            android:name="io.fabric.ApiKey"
+354-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:338:13-44
+355            android:value="802d4dbb638b95fc0e40716fd651afab6b602727" />
+355-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:339:13-69
+356
+357        <service
+357-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:341:9-343:40
+358            android:name="com.ganbook.gcm.RegistrationIntentService"
+358-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:342:13-69
+359            android:exported="false" />
+359-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:343:13-37
+360        <service
+360-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:344:9-346:38
+361            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+361-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:345:13-93
+362            android:enabled="true" />
+362-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:346:13-35
+363        <service
+363-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:347:9-349:38
+364            android:name="com.ganbook.services.UploadService"
+364-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:348:13-62
+365            android:enabled="true" />
+365-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:349:13-35
+366        <service
+366-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:350:9-353:40
+367            android:name="com.ganbook.services.SupportUploadService"
+367-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:351:13-69
+368            android:enabled="true"
+368-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:352:13-35
+369            android:exported="false" />
+369-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:353:13-37
+370
+371        <activity android:name="com.ganbook.activities.GridGalleryActivity" />
+371-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:355:9-79
+371-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:355:19-76
+372
+373        <service
+373-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:357:9-359:40
+374            android:name="com.ganbook.services.UpdateKidPicService"
+374-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:358:13-68
+375            android:exported="false" />
+375-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:359:13-37
+376        <service
+376-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:360:9-362:40
+377            android:name="com.ganbook.services.UploadInstitutionLogoService"
+377-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:361:13-77
+378            android:exported="false" />
+378-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:362:13-37
+379        <service
+379-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:363:9-365:40
+380            android:name="com.ganbook.services.UploadTeacherImageService"
+380-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:364:13-74
+381            android:exported="false" />
+381-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:365:13-37
+382        <service
+382-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:366:9-368:40
+383            android:name="com.ganbook.services.SingleCommercialService"
+383-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:367:13-72
+384            android:exported="false" />
+384-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:368:13-37
+385        <service
+385-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:369:9-371:40
+386            android:name="com.ganbook.services.UploadDrawingService"
+386-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:370:13-69
+387            android:exported="false" />
+387-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:371:13-37
+388        <service
+388-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:372:9-374:40
+389            android:name="com.ganbook.services.UploadAudioService"
+389-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:373:13-67
+390            android:exported="false" />
+390-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:374:13-37
+391        <service
+391-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:375:9-377:40
+392            android:name="com.ganbook.services.UploadMessageAttachmentService"
+392-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:376:13-79
+393            android:exported="false" />
+393-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:377:13-37
+394
+395        <activity
+395-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:379:9-382:47
+396            android:name="com.ganbook.activities.PickDropActivity"
+396-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:380:13-67
+397            android:label="@string/title_activity_pick_drop"
+397-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:381:13-61
+398            android:theme="@style/AppTheme" />
+398-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:382:13-44
+399        <activity android:name="com.ganbook.activities.PickDropNotificationsActivity" />
+399-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:383:9-89
+399-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:383:19-86
+400        <activity
+400-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:384:9-386:68
+401            android:name="com.ganbook.activities.MeetingEventActivity"
+401-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:385:13-71
+402            android:windowSoftInputMode="stateVisible|adjustPan" />
+402-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:386:13-65
+403        <activity android:name="com.ganbook.activities.MeetingHoursActivity" />
+403-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:387:9-80
+403-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:387:19-77
+404        <activity
+404-->[com.fxn769:pix:1.2.5] C:\Users\user\.gradle\caches\transforms-3\55595a04aa8e0cc3abe6585e8d55daf0\transformed\jetified-pix-1.2.5\AndroidManifest.xml:19:9-23:50
+405            android:name="com.fxn.pix.Pix"
+405-->[com.fxn769:pix:1.2.5] C:\Users\user\.gradle\caches\transforms-3\55595a04aa8e0cc3abe6585e8d55daf0\transformed\jetified-pix-1.2.5\AndroidManifest.xml:20:13-43
+406            android:noHistory="true"
+406-->[com.fxn769:pix:1.2.5] C:\Users\user\.gradle\caches\transforms-3\55595a04aa8e0cc3abe6585e8d55daf0\transformed\jetified-pix-1.2.5\AndroidManifest.xml:21:13-37
+407            android:screenOrientation="portrait"
+407-->[com.fxn769:pix:1.2.5] C:\Users\user\.gradle\caches\transforms-3\55595a04aa8e0cc3abe6585e8d55daf0\transformed\jetified-pix-1.2.5\AndroidManifest.xml:22:13-49
+408            android:theme="@style/PixAppTheme" />
+408-->[com.fxn769:pix:1.2.5] C:\Users\user\.gradle\caches\transforms-3\55595a04aa8e0cc3abe6585e8d55daf0\transformed\jetified-pix-1.2.5\AndroidManifest.xml:23:13-47
+409        <activity
+409-->[com.nbsp:materialfilepicker:1.9.1] C:\Users\user\.gradle\caches\transforms-3\54c1ca6ca1df12e18af52f238b19326d\transformed\jetified-materialfilepicker-1.9.1\AndroidManifest.xml:14:9-17:20
+410            android:name="com.nbsp.materialfilepicker.ui.FilePickerActivity"
+410-->[com.nbsp:materialfilepicker:1.9.1] C:\Users\user\.gradle\caches\transforms-3\54c1ca6ca1df12e18af52f238b19326d\transformed\jetified-materialfilepicker-1.9.1\AndroidManifest.xml:15:13-77
+411            android:theme="@style/MFP_BaseTheme" >
+411-->[com.nbsp:materialfilepicker:1.9.1] C:\Users\user\.gradle\caches\transforms-3\54c1ca6ca1df12e18af52f238b19326d\transformed\jetified-materialfilepicker-1.9.1\AndroidManifest.xml:16:13-49
+412        </activity>
+413
+414        <service
+414-->[com.github.parse-community.Parse-SDK-Android:fcm:1.19.0] C:\Users\user\.gradle\caches\transforms-3\9b1cd335fd22f836b02cb118b7de177a\transformed\jetified-fcm-1.19.0\AndroidManifest.xml:12:9-18:19
+415            android:name="com.parse.fcm.ParseFirebaseJobService"
+415-->[com.github.parse-community.Parse-SDK-Android:fcm:1.19.0] C:\Users\user\.gradle\caches\transforms-3\9b1cd335fd22f836b02cb118b7de177a\transformed\jetified-fcm-1.19.0\AndroidManifest.xml:13:13-65
+416            android:exported="false" >
+416-->[com.github.parse-community.Parse-SDK-Android:fcm:1.19.0] C:\Users\user\.gradle\caches\transforms-3\9b1cd335fd22f836b02cb118b7de177a\transformed\jetified-fcm-1.19.0\AndroidManifest.xml:14:13-37
+417            <intent-filter>
+417-->[com.github.parse-community.Parse-SDK-Android:fcm:1.19.0] C:\Users\user\.gradle\caches\transforms-3\9b1cd335fd22f836b02cb118b7de177a\transformed\jetified-fcm-1.19.0\AndroidManifest.xml:15:13-17:29
+418                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+418-->[com.github.parse-community.Parse-SDK-Android:fcm:1.19.0] C:\Users\user\.gradle\caches\transforms-3\9b1cd335fd22f836b02cb118b7de177a\transformed\jetified-fcm-1.19.0\AndroidManifest.xml:16:17-84
+418-->[com.github.parse-community.Parse-SDK-Android:fcm:1.19.0] C:\Users\user\.gradle\caches\transforms-3\9b1cd335fd22f836b02cb118b7de177a\transformed\jetified-fcm-1.19.0\AndroidManifest.xml:16:25-81
+419            </intent-filter>
+420        </service>
+421
+422        <receiver
+422-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:32:9-39:20
+423            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+423-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:33:13-78
+424            android:exported="true"
+424-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:34:13-36
+425            android:permission="com.google.android.c2dm.permission.SEND" >
+425-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:35:13-73
+426            <intent-filter>
+426-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:36:13-38:29
+427                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+427-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:37:17-81
+427-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:37:25-78
+428            </intent-filter>
+429        </receiver>
+430        <!--
+431             FirebaseMessagingService performs security checks at runtime,
+432             but set to not exported to explicitly avoid allowing another app to call it.
+433        -->
+434        <service
+434-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:45:9-52:19
+435            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+435-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:46:13-82
+436            android:directBootAware="true"
+436-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:47:13-43
+437            android:exported="false" >
+437-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:48:13-37
+438            <intent-filter android:priority="-500" >
+438-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:311:13-313:29
+439                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+439-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:312:17-78
+439-->D:\sasha\ganbook_full\ganbook darko\ganBook\src\main\AndroidManifest.xml:312:25-75
+440            </intent-filter>
+441        </service>
+442        <service
+442-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:53:9-59:19
+443            android:name="com.google.firebase.components.ComponentDiscoveryService"
+443-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:54:13-84
+444            android:directBootAware="true"
+444-->[com.google.firebase:firebase-common:20.1.1] C:\Users\user\.gradle\caches\transforms-3\aa2526fc86caeab2a017847077afd6ec\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+445            android:exported="false" >
+445-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:55:13-37
+446            <meta-data
+446-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:56:13-58:85
+447                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+447-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:57:17-119
+448                android:value="com.google.firebase.components.ComponentRegistrar" />
+448-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\user\.gradle\caches\transforms-3\7c1f5ad780400a8e97a89576292f302c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:58:17-82
+449            <meta-data
+449-->[com.google.firebase:firebase-datatransport:18.1.5] C:\Users\user\.gradle\caches\transforms-3\92e0e0ad63e6d76ffaad7a582bd34805\transformed\jetified-firebase-datatransport-18.1.5\AndroidManifest.xml:28:13-30:85
+450                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+450-->[com.google.firebase:firebase-datatransport:18.1.5] C:\Users\user\.gradle\caches\transforms-3\92e0e0ad63e6d76ffaad7a582bd34805\transformed\jetified-firebase-datatransport-18.1.5\AndroidManifest.xml:29:17-115
+451                android:value="com.google.firebase.components.ComponentRegistrar" />
+451-->[com.google.firebase:firebase-datatransport:18.1.5] C:\Users\user\.gradle\caches\transforms-3\92e0e0ad63e6d76ffaad7a582bd34805\transformed\jetified-firebase-datatransport-18.1.5\AndroidManifest.xml:30:17-82
+452            <meta-data
+452-->[com.google.android.gms:play-services-measurement-api:21.0.0] C:\Users\user\.gradle\caches\transforms-3\333966f5c3f3736228ff85e4a6467e63\transformed\jetified-play-services-measurement-api-21.0.0\AndroidManifest.xml:31:13-33:85
+453                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+453-->[com.google.android.gms:play-services-measurement-api:21.0.0] C:\Users\user\.gradle\caches\transforms-3\333966f5c3f3736228ff85e4a6467e63\transformed\jetified-play-services-measurement-api-21.0.0\AndroidManifest.xml:32:17-139
+454                android:value="com.google.firebase.components.ComponentRegistrar" />
+454-->[com.google.android.gms:play-services-measurement-api:21.0.0] C:\Users\user\.gradle\caches\transforms-3\333966f5c3f3736228ff85e4a6467e63\transformed\jetified-play-services-measurement-api-21.0.0\AndroidManifest.xml:33:17-82
+455            <meta-data
+455-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\user\.gradle\caches\transforms-3\5b8b73dc35e18822ca4c4eabadb5f1a7\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+456                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+456-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\user\.gradle\caches\transforms-3\5b8b73dc35e18822ca4c4eabadb5f1a7\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+457                android:value="com.google.firebase.components.ComponentRegistrar" />
+457-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\user\.gradle\caches\transforms-3\5b8b73dc35e18822ca4c4eabadb5f1a7\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+458        </service>
+459
+460        <activity
+460-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\c220fc40b65323398e082cfa2435a83c\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+461            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+461-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\c220fc40b65323398e082cfa2435a83c\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+462            android:exported="false"
+462-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\c220fc40b65323398e082cfa2435a83c\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+463            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+463-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\c220fc40b65323398e082cfa2435a83c\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+464
+465        <provider
+465-->[com.google.firebase:firebase-common:20.1.1] C:\Users\user\.gradle\caches\transforms-3\aa2526fc86caeab2a017847077afd6ec\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+466            android:name="com.google.firebase.provider.FirebaseInitProvider"
+466-->[com.google.firebase:firebase-common:20.1.1] C:\Users\user\.gradle\caches\transforms-3\aa2526fc86caeab2a017847077afd6ec\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+467            android:authorities="com.project.ganim.firebaseinitprovider"
+467-->[com.google.firebase:firebase-common:20.1.1] C:\Users\user\.gradle\caches\transforms-3\aa2526fc86caeab2a017847077afd6ec\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+468            android:directBootAware="true"
+468-->[com.google.firebase:firebase-common:20.1.1] C:\Users\user\.gradle\caches\transforms-3\aa2526fc86caeab2a017847077afd6ec\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+469            android:exported="false"
+469-->[com.google.firebase:firebase-common:20.1.1] C:\Users\user\.gradle\caches\transforms-3\aa2526fc86caeab2a017847077afd6ec\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+470            android:initOrder="100" />
+470-->[com.google.firebase:firebase-common:20.1.1] C:\Users\user\.gradle\caches\transforms-3\aa2526fc86caeab2a017847077afd6ec\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+471
+472        <receiver
+472-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:29:9-33:20
+473            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+473-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:30:13-85
+474            android:enabled="true"
+474-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:31:13-35
+475            android:exported="false" >
+475-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:32:13-37
+476        </receiver>
+477
+478        <service
+478-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:35:9-38:40
+479            android:name="com.google.android.gms.measurement.AppMeasurementService"
+479-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:36:13-84
+480            android:enabled="true"
+480-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:37:13-35
+481            android:exported="false" />
+481-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:38:13-37
+482        <service
+482-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:39:9-43:72
+483            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+483-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:40:13-87
+484            android:enabled="true"
+484-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:41:13-35
+485            android:exported="false"
+485-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:42:13-37
+486            android:permission="android.permission.BIND_JOB_SERVICE" />
+486-->[com.google.android.gms:play-services-measurement:21.0.0] C:\Users\user\.gradle\caches\transforms-3\c2aa21219b34d538642f974d4ca175e5\transformed\jetified-play-services-measurement-21.0.0\AndroidManifest.xml:43:13-69
+487
+488        <provider
+488-->[androidx.emoji2:emoji2:1.2.0-alpha04] C:\Users\user\.gradle\caches\transforms-3\ece0ee234a8c02b962a7b49685ece0fc\transformed\jetified-emoji2-1.2.0-alpha04\AndroidManifest.xml:26:9-34:20
+489            android:name="androidx.startup.InitializationProvider"
+489-->[androidx.emoji2:emoji2:1.2.0-alpha04] C:\Users\user\.gradle\caches\transforms-3\ece0ee234a8c02b962a7b49685ece0fc\transformed\jetified-emoji2-1.2.0-alpha04\AndroidManifest.xml:27:13-67
+490            android:authorities="com.project.ganim.androidx-startup"
+490-->[androidx.emoji2:emoji2:1.2.0-alpha04] C:\Users\user\.gradle\caches\transforms-3\ece0ee234a8c02b962a7b49685ece0fc\transformed\jetified-emoji2-1.2.0-alpha04\AndroidManifest.xml:28:13-68
+491            android:exported="false" >
+491-->[androidx.emoji2:emoji2:1.2.0-alpha04] C:\Users\user\.gradle\caches\transforms-3\ece0ee234a8c02b962a7b49685ece0fc\transformed\jetified-emoji2-1.2.0-alpha04\AndroidManifest.xml:29:13-37
+492            <meta-data
+492-->[androidx.emoji2:emoji2:1.2.0-alpha04] C:\Users\user\.gradle\caches\transforms-3\ece0ee234a8c02b962a7b49685ece0fc\transformed\jetified-emoji2-1.2.0-alpha04\AndroidManifest.xml:31:13-33:52
+493                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+493-->[androidx.emoji2:emoji2:1.2.0-alpha04] C:\Users\user\.gradle\caches\transforms-3\ece0ee234a8c02b962a7b49685ece0fc\transformed\jetified-emoji2-1.2.0-alpha04\AndroidManifest.xml:32:17-75
+494                android:value="androidx.startup" />
+494-->[androidx.emoji2:emoji2:1.2.0-alpha04] C:\Users\user\.gradle\caches\transforms-3\ece0ee234a8c02b962a7b49685ece0fc\transformed\jetified-emoji2-1.2.0-alpha04\AndroidManifest.xml:33:17-49
+495            <meta-data
+495-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\2885645f91b4ed2b78a88c345db7a928\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+496                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+496-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\2885645f91b4ed2b78a88c345db7a928\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+497                android:value="androidx.startup" />
+497-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\2885645f91b4ed2b78a88c345db7a928\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+498        </provider>
+499        <!--
+500             Receives GooglePlay execution requests and forwards them to the
+501             appropriate internal service.
+502        -->
+503        <service
+503-->[com.firebase:firebase-jobdispatcher:0.8.5] C:\Users\user\.gradle\caches\transforms-3\474c5cecc9bf8d00d4bc8b465eaef5a0\transformed\jetified-firebase-jobdispatcher-0.8.5\AndroidManifest.xml:32:9-39:19
+504            android:name="com.firebase.jobdispatcher.GooglePlayReceiver"
+504-->[com.firebase:firebase-jobdispatcher:0.8.5] C:\Users\user\.gradle\caches\transforms-3\474c5cecc9bf8d00d4bc8b465eaef5a0\transformed\jetified-firebase-jobdispatcher-0.8.5\AndroidManifest.xml:33:13-73
+505            android:exported="true"
+505-->[com.firebase:firebase-jobdispatcher:0.8.5] C:\Users\user\.gradle\caches\transforms-3\474c5cecc9bf8d00d4bc8b465eaef5a0\transformed\jetified-firebase-jobdispatcher-0.8.5\AndroidManifest.xml:34:13-36
+506            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
+506-->[com.firebase:firebase-jobdispatcher:0.8.5] C:\Users\user\.gradle\caches\transforms-3\474c5cecc9bf8d00d4bc8b465eaef5a0\transformed\jetified-firebase-jobdispatcher-0.8.5\AndroidManifest.xml:35:13-93
+507            <intent-filter>
+507-->[com.firebase:firebase-jobdispatcher:0.8.5] C:\Users\user\.gradle\caches\transforms-3\474c5cecc9bf8d00d4bc8b465eaef5a0\transformed\jetified-firebase-jobdispatcher-0.8.5\AndroidManifest.xml:36:13-38:29
+508                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+508-->[com.firebase:firebase-jobdispatcher:0.8.5] C:\Users\user\.gradle\caches\transforms-3\474c5cecc9bf8d00d4bc8b465eaef5a0\transformed\jetified-firebase-jobdispatcher-0.8.5\AndroidManifest.xml:37:17-87
+508-->[com.firebase:firebase-jobdispatcher:0.8.5] C:\Users\user\.gradle\caches\transforms-3\474c5cecc9bf8d00d4bc8b465eaef5a0\transformed\jetified-firebase-jobdispatcher-0.8.5\AndroidManifest.xml:37:25-84
+509            </intent-filter>
+510        </service>
+511        <service
+511-->[com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\user\.gradle\caches\transforms-3\93626ef76e3e57a182fd2f74b0fff06d\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:29:9-35:19
+512            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+512-->[com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\user\.gradle\caches\transforms-3\93626ef76e3e57a182fd2f74b0fff06d\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:30:13-103
+513            android:exported="false" >
+513-->[com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\user\.gradle\caches\transforms-3\93626ef76e3e57a182fd2f74b0fff06d\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:31:13-37
+514            <meta-data
+514-->[com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\user\.gradle\caches\transforms-3\93626ef76e3e57a182fd2f74b0fff06d\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:32:13-34:39
+515                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+515-->[com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\user\.gradle\caches\transforms-3\93626ef76e3e57a182fd2f74b0fff06d\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:33:17-94
+516                android:value="cct" />
+516-->[com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\user\.gradle\caches\transforms-3\93626ef76e3e57a182fd2f74b0fff06d\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:34:17-36
+517        </service>
+518        <service
+518-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\user\.gradle\caches\transforms-3\9d61b601c3f9449c1a2ce092f74e9b02\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:26:9-30:19
+519            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+519-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\user\.gradle\caches\transforms-3\9d61b601c3f9449c1a2ce092f74e9b02\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:27:13-117
+520            android:exported="false"
+520-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\user\.gradle\caches\transforms-3\9d61b601c3f9449c1a2ce092f74e9b02\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:28:13-37
+521            android:permission="android.permission.BIND_JOB_SERVICE" >
+521-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\user\.gradle\caches\transforms-3\9d61b601c3f9449c1a2ce092f74e9b02\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:29:13-69
+522        </service>
+523
+524        <receiver
+524-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\user\.gradle\caches\transforms-3\9d61b601c3f9449c1a2ce092f74e9b02\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:32:9-34:40
+525            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+525-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\user\.gradle\caches\transforms-3\9d61b601c3f9449c1a2ce092f74e9b02\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:33:13-132
+526            android:exported="false" />
+526-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\user\.gradle\caches\transforms-3\9d61b601c3f9449c1a2ce092f74e9b02\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:34:13-37
+527    </application>
+528
+529</manifest>
